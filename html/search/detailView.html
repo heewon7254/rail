@@ -1,0 +1,1644 @@
+<!-- 상단 공통 시작 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>통합검색결과</title>
+    <link rel="stylesheet" href="../../css/font.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../../css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../css/grid_sample.css">
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+<body> 
+    <!-- class="active" 추가 시 서브메뉴 보임 -->
+    <header>
+        <div class="con">
+            <div class="gnb_wrap">
+                <div class="h_left">
+                    <button class="all_menu open_popup" data-popup="site_map_popup"><span class="sr_only">전체메뉴보기</span></button>
+                    <h1><span class="sr_only">코레일 로고</span></h1>
+                </div>
+                <nav>
+                    <ul class="gnb">
+                        <!-- class="on" 추가 시 페이지 활성화 표시 -->
+                        <li class="on">
+                            <a href="javascript:void(0)"><span>서비스 소개</span></a>
+                             <div class="lnb_wrap">
+                                <ul class="lnb">
+                                    <li><a href="javascript:void(0)">서비스 개요</a></li>
+                                    <li><a href="javascript:void(0)">활용방법</a></li>
+                                    <li><a href="javascript:void(0)">운영조직</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><span>데이터 현황</span></a>
+                            <div class="lnb_wrap">
+                                <ul class="lnb">
+                                    <li><a href="javascript:void(0)">분류체계</a></li>
+                                    <li><a href="javascript:void(0)">데이터 맵</a></li>
+                                </ul>
+                            </div>
+                        </li> 
+                        <li>
+                            <a href="javascript:void(0)"><span>데이터 시각화</span></a>
+                            <div class="lnb_wrap">
+                                <ul class="lnb">
+                                    <li><a href="javascript:void(0)">메타 현황</a></li>
+                                    <li><a href="javascript:void(0)">메타 관리 현황</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><span>커뮤니티</span></a>
+                            <div class="lnb_wrap">  
+                                <ul class="lnb">
+                                    <li><a href="javascript:void(0)">공지사항</a></li>
+                                    <li><a href="javascript:void(0)">Q&A</a></li>
+                                    <li><a href="javascript:void(0)">자료실</a></li>
+                                    <li><a href="javascript:void(0)">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><span>마이페이지</span></a>
+                            <div class="lnb_wrap">
+                                <ul class="lnb">
+                                    <li><a href="javascript:void(0)">내 업무</a></li>
+                                    <li><a href="javascript:void(0)">메타관리</a></li>
+                                    <li><a href="javascript:void(0)">품질관리</a></li>
+                                    <li><a href="javascript:void(0)">흐름관리</a></li>
+                                    <li><a href="javascript:void(0)">카탈로그관리</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="h_right">
+                    <div class="header_search">
+                        <button class="open_popup" data-popup="heaader_search_popup"><span class="sr_only">검색</span></button>
+                    </div>
+                    <div class="header_alarm">
+                        <span class="cnt">27</span>
+                        <button class="txt">알림</button>
+                    </div>
+                    <div class="header_login">
+                        <span class="txt">김한국님_디지털기획부</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="layer_bk"></div>
+    <!-- 전체메뉴 팝업 -->
+    <div class="layer_popup" id="site_map_popup">
+        <div class="popup_box">
+            <div class="pop_title">
+                <p class="site_map_title">전체메뉴</p>
+            </div>
+            <div class="pop_con" tabindex="0">
+                <div class="site_map">
+                    <div class="menu_item">
+                        <a href="javascript:void(0)">서비스 소개</a>
+                        <ul class="sub_menu_item">
+                            <li><a href="javascript:void(0)">서비스개요</a></li>
+                            <li><a href="javascript:void(0)">활용방법</a></li>
+                            <li><a href="javascript:void(0)">운영조직</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_item">
+                        <a href="javascript:void(0)">데이터 현황</a>
+                        <ul class="sub_menu_item">
+                            <li><a href="javascript:void(0)">분류체계</a></li>
+                            <li><a href="javascript:void(0)">데이터맵</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_item">
+                        <a href="javascript:void(0)">데이터 시각화</a>
+                        <ul class="sub_menu_item">
+                            <li><a href="javascript:void(0)">메타 현황</a></li>
+                            <li><a href="javascript:void(0)">메타 관리 현황</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_item">
+                        <a href="javascript:void(0)">커뮤니티</a>
+                        <ul class="sub_menu_item">
+                            <li><a href="javascript:void(0)">공지사항</a></li>
+                            <li><a href="javascript:void(0)">Q&A</a></li>
+                            <li><a href="javascript:void(0)">자료실</a></li>
+                            <li><a href="javascript:void(0)">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_item mypage">
+                        <a href="javascript:void(0)">마이페이지</a>
+                        <div class="link_area">
+                            <a href="javascript:void(0)" class="task">내 업무</a>
+                            <a href="javascript:void(0)">메타관리</a>
+                            <a href="javascript:void(0)">품질관리</a>
+                            <a href="javascript:void(0)">흐름관리</a>
+                            <a href="javascript:void(0)">카탈로그 관리</a>
+                        </div>
+                        <div class="sub_menu_area">
+                            <div class="item">
+                                <a href="javascript:void(0)" class="third_level">개인화설정</a>
+                                <ul class="sub_menu_item">
+                                    <li><a href="javascript:void(0)">즐겨찾기 목록 관리</a></li>
+                                </ul>
+                            </div>
+                            <div class="item">
+                                <a href="javascript:void(0)" class="third_level">내 업무</a>
+                                <ul class="sub_menu_item">
+                                    <li><a href="javascript:void(0)">내 업무 요약</a></li>
+                                    <li><a href="javascript:void(0)">데이터셋 요청 결재 관리</a></li>
+                                    <li><a href="javascript:void(0)">데이터 요청 현황/다운로드</a></li>
+                                    <li><a href="javascript:void(0)">데이터 오류 접수 관리</a></li>
+                                    <li><a href="javascript:void(0)">데이터 수요 요청 관리</a></li>
+                                    <li><a href="javascript:void(0)">정보 시스템 신청 현황</a></li>
+                                    <li><a href="javascript:void(0)">알림 이력 관리</a></li>
+                                </ul>
+                            </div>
+                            <div class="item">
+                                <a href="javascript:void(0)" class="third_level">관리 - 일반</a>
+                                <ul class="sub_menu_item">
+                                    <li><a href="javascript:void(0)">역할 관리</a></li>
+                                    <li><a href="javascript:void(0)">메뉴 관리</a></li>
+                                    <li><a href="javascript:void(0)">부서/사용자 관리</a></li>
+                                    <li><a href="javascript:void(0)">메뉴 별 역할 관리</a></li>
+                                    <li><a href="javascript:void(0)">부서/사용자 별 역할 관리</a></li>
+                                    <li><a href="javascript:void(0)">결재선 관리</a></li>
+                                    <li><a href="javascript:void(0)">포털 공통 코드 관리</a></li>
+                                    <li><a href="javascript:void(0)">정보 시스템 사용 요청 관리</a></li>
+                                    <li><a href="javascript:void(0)">정보 시스템 사용 동의서 관리</a></li>
+                                </ul>
+                            </div>
+                            <div class="item">
+                                <a href="javascript:void(0)" class="third_level">관리 - 제품 연계 관리</a>
+                                <ul class="sub_menu_item">
+                                    <li><a href="javascript:void(0)">메타 시스템 관리</a></li>
+                                    <li><a href="javascript:void(0)">제품 사용 설정 관리</a></li>
+                                    <li><a href="javascript:void(0)">포털 배치 관리</a></li>
+                                    <li><a href="javascript:void(0)">통합 배치 모니터링</a></li>
+                                    <li><a href="javascript:void(0)">이루다 설정 관리</a></li>
+                                </ul> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn pop_close">
+                <span class="sr_only">팝업닫기버튼</span>
+            </button>
+        </div>
+    </div>
+    <!-- 헤더 검색창 팝업 -->
+    <div class="layer_popup" id="heaader_search_popup">
+        <div class="popup_box">
+            <button class="btn pop_close">
+                <span class="sr_only">팝업닫기버튼</span>
+            </button> 
+            <div class="pop_con">
+                <div class="search_pop_con">
+                    <div class="search_pop_int">
+                        <input type="text" placeholder="검색어를 입력해 주세요.">
+                        <button class="pop_search_btn">
+                            <span class="sr_only">검색버튼</span>
+                        </button>
+                    </div>
+                    <div class="search_pop_option">
+                        <p>검색옵션</p>
+                        <div class="radio_btn">
+                            <label class="radio_s">
+                                <input type="radio" name="radio">
+                                <span class="radio_mark" aria-hidden="true"></span>
+                                <span class="radio_txt">or검색</span>
+                            </label>
+                            <label class="radio_s">
+                                <input type="radio" name="radio">
+                                <span class="radio_mark" aria-hidden="true"></span>
+                                <span class="radio_txt">and검색</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pop_btn">
+                <button class="secondary pop_close">닫기</button>
+            </div>
+        </div>
+    </div>
+    <!-- 알람 레이어 팝업 -->
+    <div class="alarm_layer_popup">
+        <div class="popup_box">
+            <div class="title">알림</div>
+            <div class="tab">
+                <!-- class="active" 추가 시 활성화 -->
+                <button class="active">결재<span>999</span></button>
+                <button>요청<span>999</span></button>
+                <button>전체<span>999</span></button> 
+            </div>
+            <div class="list">
+                <div class="item">
+                    <div class="ctg">
+                        <!-- class="blue"결재요청 | class="black" 결재완료 -->
+                        <span class="blue">결재요청</span>
+                        <span>정보시스템</span>
+                    </div>
+                    <div class="con_title">시스템명 / 결제요청 건</div>
+                    <div class="etc"> 
+                        <p>2024-08-18 12:12:12</p>
+                        <div class="btn">
+                            <a href="javascript:void(0)">읽음</a>
+                            <a href="javascript:void(0)" class="link">이동</a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ctg">
+                        <!-- class="blue"결재요청 | class="black" 결재완료 -->
+                        <span class="black">결재완료</span>
+                        <span>정보시스템</span>
+                    </div>
+                    <div class="con_title">시스템명 / 결제요청 건</div>
+                    <div class="etc"> 
+                        <p>2024-08-18 12:12:12</p>
+                        <div class="btn">
+                            <a href="javascript:void(0)">읽음</a>
+                            <a href="javascript:void(0)" class="link">이동</a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ctg">
+                        <!-- class="blue"결재요청 | class="black" 결재완료 -->
+                        <span class="blue">결재요청</span>
+                        <span>정보시스템</span>
+                    </div>
+                    <div class="con_title">시스템명 / 결제요청 건</div>
+                    <div class="etc"> 
+                        <p>2024-08-18 12:12:12</p>
+                        <div class="btn">
+                            <a href="javascript:void(0)">읽음</a>
+                            <a href="javascript:void(0)" class="link">이동</a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ctg">
+                        <!-- class="blue"결재요청 | class="black" 결재완료 -->
+                        <span class="black">결재요청</span>
+                        <span>정보시스템</span>
+                    </div>
+                    <div class="con_title">시스템명 / 결제요청 건</div>
+                    <div class="etc"> 
+                        <p>2024-08-18 12:12:12</p>
+                        <div class="btn">
+                            <a href="javascript:void(0)">읽음</a>
+                            <a href="javascript:void(0)" class="link">이동</a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ctg">
+                        <!-- class="blue"결재요청 | class="black" 결재완료 -->
+                        <span class="blue">결재요청</span>
+                        <span>정보시스템</span>
+                    </div>
+                    <div class="con_title">시스템명 / 결제요청 건</div>
+                    <div class="etc"> 
+                        <p>2024-08-18 12:12:12</p>
+                        <div class="btn">
+                            <a href="javascript:void(0)">읽음</a>
+                            <a href="javascript:void(0)" class="link">이동</a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ctg">
+                        <!-- class="blue"결재요청 | class="black" 결재완료 -->
+                        <span class="black">결재요청</span>
+                        <span>정보시스템</span>
+                    </div>
+                    <div class="con_title">시스템명 / 결제요청 건</div>
+                    <div class="etc"> 
+                        <p>2024-08-18 12:12:12</p>
+                        <div class="btn">
+                            <a href="javascript:void(0)">읽음</a>
+                            <a href="javascript:void(0)" class="link">이동</a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ctg">
+                        <!-- class="blue"결재요청 | class="black" 결재완료 -->
+                        <span class="blue">결재요청</span>
+                        <span>정보시스템</span>
+                    </div>
+                    <div class="con_title">시스템명 / 결제요청 건</div>
+                    <div class="etc"> 
+                        <p>2024-08-18 12:12:12</p>
+                        <div class="btn">
+                            <a href="javascript:void(0)">읽음</a>
+                            <a href="javascript:void(0)" class="link">이동</a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <button class="alarm_close"><span class="sr_only">알림팝업닫기</span></button>
+        </div>
+    </div>
+    <div class="wrap">
+        <!-- 왼쪽 리스트 -->
+        <!-- 통합검색결과일 때 class="search_menu" 추가 -->
+        <aside class="search_menu">
+            <div class="aside_con">
+                <!-- 상세검색 -->
+                <div class="filter">
+                    <div class="selected">
+                        <p class="title">필터 목록</p> 
+                        <div class="item">
+                            <a href="javascript:void(0)" class="all_delete">
+                                <img src="../../img/aside_search_total_delete_icon.svg" alt="삭제 아이콘">전체삭제
+                            </a>
+                            <div class="list">
+                                <p>#승차권<a href="javascript:void(0)" class="delete"></a></p>
+                                <p>#발권시스템<a href="javascript:void(0)" class="delete"></a></p>
+                                <p>#여객<a href="javascript:void(0)" class="delete"></a></p>
+                                <p>#문화홍보처<a href="javascript:void(0)" class="delete"></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="f_menu">
+                        <nav>
+                            <ul class="gnb"> 
+                                <!-- class="on" 추가 시 열림 -->
+                                <li class="on">
+                                    <a href="javascript:void(0)"><span>메타 데이터 구분</span></a>
+                                    <div class="ctg_area">
+                                        <div class="tree_list">
+                                            <div class="item">
+                                                <!-- class="on" 추가 시 하위 메뉴 보임 -->
+                                                <button class="slide_btn on"><span class="sr_only">슬라이드 버튼</span></button>
+                                                <!-- 대분류 선택됐을 시, class="active" 추가 -->
+                                                <div class="large_ctg">
+                                                    <label class="chk_s">
+                                                        <input type="checkbox">
+                                                        <span class="chk_img" aria-hidden="true"></span>
+                                                        <span class="chk_txt">모델</span>
+                                                    </label>
+                                                    <span class="cnt">9,999</span>
+                                                </div>
+                                                <!-- class="active" 추가 시 내용 보임 -->
+                                                <div class="sm_ctg">
+                                                    <ul class="list">
+                                                        <!-- 소분류 선택됐을 시, class="active" 추가 -->
+                                                        <li>
+                                                            <label class="chk_s">
+                                                                <input type="checkbox">
+                                                                <span class="chk_img" aria-hidden="true"></span>
+                                                                <span class="chk_txt">여객 시스템</span>
+                                                            </label>
+                                                            <span class="cnt">99</span>
+                                                        </li>
+                                                        <!-- 소분류 선택됐을 시, class="active" 추가 -->
+                                                        <li>
+                                                            <label class="chk_s">
+                                                                <input type="checkbox">
+                                                                <span class="chk_img" aria-hidden="true"></span>
+                                                                <span class="chk_txt">발권 시스템</span>
+                                                            </label>
+                                                            <span class="cnt">99</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <!-- class="on" 추가 시 하위 메뉴 보임 -->
+                                                <button class="slide_btn on"><span class="sr_only">슬라이드 버튼</span></button>
+                                                <!-- 대분류 선택됐을 시, class="active" 추가 -->
+                                                <div class="large_ctg">
+                                                    <label class="chk_s">
+                                                        <input type="checkbox" disabled>
+                                                        <span class="chk_img" aria-hidden="true"></span>
+                                                        <span class="chk_txt">표준사전</span>
+                                                    </label>
+                                                    <span class="cnt">9,999</span>
+                                                </div>
+                                                <!-- class="active" 추가 시 내용 보임 -->
+                                                <div class="sm_ctg">
+                                                    <ul class="list">
+                                                        <!-- 소분류 선택됐을 시, class="active" 추가 -->
+                                                        <li>
+                                                            <label class="chk_s">
+                                                                <input type="checkbox" disabled>
+                                                                <span class="chk_img" aria-hidden="true"></span>
+                                                                <span class="chk_txt">단어</span>
+                                                            </label>
+                                                            <span class="cnt">99</span>
+                                                        </li>
+                                                        <!-- 소분류 선택됐을 시, class="active" 추가 -->
+                                                        <li>
+                                                            <label class="chk_s">
+                                                                <input type="checkbox" disabled>
+                                                                <span class="chk_img" aria-hidden="true"></span>
+                                                                <span class="chk_txt">도메인</span>
+                                                            </label>
+                                                            <span class="cnt">99</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><span>품질 분석 구분</span></a>
+                                    <div class="ctg_area">
+                                        <div class="single_list">
+                                            <!-- 대분류 선택됐을 시, class="active" 추가 -->
+                                            <div class="large_ctg">
+                                                <label class="chk_s">
+                                                    <input type="checkbox">
+                                                    <span class="chk_img" aria-hidden="true"></span>
+                                                    <span class="chk_txt">99% ~</span>
+                                                </label>
+                                                <span class="cnt">9,999</span>
+                                            </div>
+                                            <div class="large_ctg">
+                                                <label class="chk_s">
+                                                    <input type="checkbox">
+                                                    <span class="chk_img" aria-hidden="true"></span>
+                                                    <span class="chk_txt">90% ~ 99%</span>
+                                                </label>
+                                                <span class="cnt">9,999</span>
+                                            </div>
+                                            <div class="large_ctg">
+                                                <label class="chk_s">
+                                                    <input type="checkbox">
+                                                    <span class="chk_img" aria-hidden="true"></span>
+                                                    <span class="chk_txt">80% ~ 89%</span>
+                                                </label>
+                                                <span class="cnt">9,999</span>
+                                            </div>
+                                            <div class="large_ctg">
+                                                <label class="chk_s">
+                                                    <input type="checkbox">
+                                                    <span class="chk_img" aria-hidden="true"></span>
+                                                    <span class="chk_txt">~80%</span>
+                                                </label>
+                                                <span class="cnt">9,999</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><span>흐름 분석 구분</span></a>
+                                    <div class="ctg_area">
+                                        <div class="single_list">
+                                            <!-- 대분류 선택됐을 시, class="active" 추가 -->
+                                            <div class="large_ctg">
+                                                <label class="chk_s">
+                                                    <input type="checkbox">
+                                                    <span class="chk_img" aria-hidden="true"></span>
+                                                    <span class="chk_txt">99% ~</span>
+                                                </label>
+                                                <span class="cnt">9,999</span>
+                                            </div>
+                                            <div class="large_ctg">
+                                                <label class="chk_s">
+                                                    <input type="checkbox">
+                                                    <span class="chk_img" aria-hidden="true"></span>
+                                                    <span class="chk_txt">90% ~ 99%</span>
+                                                </label>
+                                                <span class="cnt">9,999</span>
+                                            </div>
+                                            <div class="large_ctg">
+                                                <label class="chk_s">
+                                                    <input type="checkbox">
+                                                    <span class="chk_img" aria-hidden="true"></span>
+                                                    <span class="chk_txt">80% ~ 89%</span>
+                                                </label>
+                                                <span class="cnt">9,999</span>
+                                            </div>
+                                            <div class="large_ctg">
+                                                <label class="chk_s">
+                                                    <input type="checkbox">
+                                                    <span class="chk_img" aria-hidden="true"></span>
+                                                    <span class="chk_txt">~80%</span>
+                                                </label>
+                                                <span class="cnt">9,999</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><span>개인정보 여부</span></a>
+                                    <div class="ctg_area">
+                                        <div class="single_list">
+                                            <!-- 대분류 선택됐을 시, class="active" 추가 -->
+                                            <div class="large_ctg">
+                                                <label class="chk_s">
+                                                    <input type="checkbox">
+                                                    <span class="chk_img" aria-hidden="true"></span>
+                                                    <span class="chk_txt">Y</span>
+                                                </label>
+                                                <span class="cnt">9,999</span>
+                                            </div>
+                                            <div class="large_ctg">
+                                                <label class="chk_s">
+                                                    <input type="checkbox">
+                                                    <span class="chk_img" aria-hidden="true"></span>
+                                                    <span class="chk_txt">N</span>
+                                                </label>
+                                                <span class="cnt">9,999</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><span>데이터 셋 제공 여부</span></a>
+                                    <div class="ctg_area">
+                                        <div class="single_list">
+                                            <!-- 대분류 선택됐을 시, class="active" 추가 -->
+                                            <div class="large_ctg">
+                                                <label class="chk_s">
+                                                    <input type="checkbox">
+                                                    <span class="chk_img" aria-hidden="true"></span>
+                                                    <span class="chk_txt">Y</span>
+                                                </label>
+                                                <span class="cnt">9,999</span>
+                                            </div>
+                                            <div class="large_ctg">
+                                                <label class="chk_s">
+                                                    <input type="checkbox">
+                                                    <span class="chk_img" aria-hidden="true"></span>
+                                                    <span class="chk_txt">N</span>
+                                                </label>
+                                                <span class="cnt">9,999</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- 현재 페이지 경로 -->
+        <div class="location_wrap">
+            <a href="javascript:void"><span class="sr_only">home</span></a>
+            <a href="javascript:void">통합검색결과</a>
+        </div> 
+        <div class="contents">
+            <!-- 상단 공통 끝 -->
+            <div class="sub">
+                <div class="search_top_wrap">
+                    <div class="layer_area">
+                        <div class="search">
+                            <input type="text" placeholder="검색어를 입력해주세요." class="layer_target">
+                            <div class="btns">
+                                <a href="javascript:void(0)">
+                                    <img src="../../img/search_filter_icon.svg" alt="필터 버튼">
+                                </a>
+                                <a href="javascript:void(0)" class="search_btn">
+                                    <img src="../../img/search_black_icon.svg" alt="검색 버튼">
+                                </a>
+                            </div>
+                        </div>
+                        <label class="chk_s">
+                            <input type="checkbox">
+                            <span class="chk_img" aria-hidden="true"></span>
+                            <span class="chk_txt">결과 내 재검색</span>
+                        </label>
+                        <!-- 검색 레이어 내용 class="show" 추가 시 활성화 -->
+                        <div class="layer_box">
+                            <div class="search_box_layer">
+                                <!-- 최근검색어 -->
+                                <div class="recent_box">
+                                    <p class="title">최근검색어</p>
+                                    <div class="item">
+                                        <a href="javascript:void(0)" class="txt">
+                                            <span>통합데이터시스템</span>
+                                            <span>2024.08.16</span>
+                                        </a>
+                                        <a href="javascript:void(0)" class="delete_btn">
+                                            <img src="../../img/search_delete_icon.svg" alt="최근검색어 삭제 버튼">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="javascript:void(0)" class="txt">
+                                            <span>추석예매현황</span>
+                                            <span>2024.08.16</span>
+                                        </a>
+                                        <a href="javascript:void(0)" class="delete_btn">
+                                            <img src="../../img/search_delete_icon.svg" alt="최근검색어 삭제 버튼">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="javascript:void(0)" class="txt">
+                                            <span>데이터현황</span>
+                                            <span>2024.08.16</span>
+                                        </a>
+                                        <a href="javascript:void(0)" class="delete_btn">
+                                            <img src="../../img/search_delete_icon.svg" alt="최근검색어 삭제 버튼">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="javascript:void(0)" class="txt">
+                                            <span>메타데이터현황</span>
+                                            <span>2024.08.16</span>
+                                        </a>
+                                        <a href="javascript:void(0)" class="delete_btn">
+                                            <img src="../../img/search_delete_icon.svg" alt="최근검색어 삭제 버튼">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="javascript:void(0)" class="txt">
+                                            <span>한국철도 인기데이터 통계포털</span>
+                                            <span>2024.08.16</span>
+                                        </a>
+                                        <a href="javascript:void(0)" class="delete_btn">
+                                            <img src="../../img/search_delete_icon.svg" alt="최근검색어 삭제 버튼">
+                                        </a>
+                                    </div>
+                                    <a href="javascript:void(0)" class="all_delete_btn">전체삭제</a>
+                                </div>
+                                <!-- 자동완성 -->
+                                <div class="auto_com_box">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="search_tab_wrap">
+                    <!-- class="on" 추가 시 활성화 -->
+                    <a href="javascript:void(0)" class="model on">모델</a>
+                    <a href="javascript:void(0)" class="dic">표준사전</a>
+                </div>
+                <div class="search_content_wrap">
+                    <!-- 모델 (카드) | class="on" 추가 시 내용 보임  -->
+                    <div class="search_tab_con model on">
+                        <div class="search_util_wrap">
+                            <div class="title_area">
+                                <p class="title">모델</p>
+                                <div class="cnt">
+                                    <p>검색결과 <span>9,999</span></p>
+                                    <span class="txt">건</span>
+                                </div>
+                                <div class="keyword">
+                                    <p>검색키워드 :</p>
+                                    <ul>
+                                        <li>여객</li>
+                                        <li>운송</li>
+                                        <li>시설</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sort_area">
+                                <div class="list">
+                                    <!-- class="on" 시 활성화 -->
+                                    <a  href="java script:void(0)" class="on">유사도</a>
+                                    <a href="javascript:void(0)">다운로드순</a>
+                                    <a href="javascript:void(0)">조회순</a>
+                                    <a href="javascript:void(0)">좋아요순</a>
+                                    <a href="javascript:void(0)">최신순</a>
+                                </div>
+                                <div class="toggle">
+                                    <a href="javascript:void(0)" class="card on">Card</a>
+                                    <a href="javascript:void(0)" class="grid">Grid</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid_area">
+                            <div class="box">
+                                <div class="title_inn">
+                                    <div class="txt">
+                                        <!-- 모델일 때 class="model" | 표준사전일 때 class="dic" -->
+                                        <p class="title model">여객열차</p>
+                                        <!-- 공개불가일 때 class="private" | 전체공개일 때 class="public" -->
+                                        <span class="status private">공개불가</span>
+                                        <!-- 민감정보포함일 때 하단 태그 추가 | 미포함일 때는 태그 삭제 -->
+                                        <span class="status info">민감정보포함</span>
+                                    </div>
+                                    <div class="icon">
+                                        <a href="javascript:void(0)" class="like">565</a>
+                                        <!-- class="on" 추가 시 즐겨찾기 활성화 -->
+                                        <a href="javascript:void(0)" class="mark on">565</a>
+                                        <a href="javascript:void(0)" class="comment">565</a>
+                                    </div>
+                                </div>
+                                <div class="info_inn">
+                                    <!-- 모델일 때 class="model" | 표준사전일 때 class="dic" -->
+                                    <div class="txt">
+                                        <p class="ctg model">여객시스템</p>
+                                        <ul class="list">
+                                            <li>DB명 : <span>DBMS NAME</span></li>
+                                            <li>최근갱신일 : <span>DBMS NAME</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="desc">데이터설명이 들어가는 영역이라 가장길게 들어가는  영역입니다 데이터설명이 들어가는 영역이라 가장길게 들어가는  영역입니다  두줄이 들어갑니다.    데이터설명이 들어가는 영역이라 가장길게 들어가는  영역입니다  두줄이 들어갑니다.</div>
+                                    <table class="tb_fixed">
+                                        <tr>
+                                            <th>테이블 물리명</th>
+                                            <td>TABLE NAME</td>
+                                            <th>흐름분석</th>
+                                            <td>Y</td>
+                                        </tr>
+                                        <tr>
+                                            <th>담당부서</th>
+                                            <td>여객 시스템 부서</td>
+                                            <th>품질분석</th>
+                                            <td>Y</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="btns_inn"> 
+                                    <ul class="list">
+                                        <li>조회수 <span>91</span>회</li>
+                                        <li>다운로드 횟수 <span>91</span>회</li>
+                                    </ul>
+                                    <div class="btn">
+                                        <a href="javascript:void(0)" class="detail">상세조회</a>
+                                        <a href="javascript:void(0)" class="system">시스템 사용요청</a>
+                                        <a href="javascript:void(0)" class="dataset">데이터셋 요청</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="title_inn">
+                                    <div class="txt">
+                                        <!-- 모델일 때 class="model" | 표준사전일 때 class="dic" -->
+                                        <p class="title model">여객열차</p>
+                                        <!-- 공개불가일 때 class="private" | 전체공개일 때 class="public" -->
+                                        <span class="status private">공개불가</span>
+                                    </div>
+                                    <div class="icon">
+                                        <a href="javascript:void(0)" class="like">565</a>
+                                        <a href="javascript:void(0)" class="mark">565</a>
+                                        <a href="javascript:void(0)" class="comment">565</a>
+                                    </div>
+                                </div>
+                                <div class="info_inn">
+                                    <!-- 모델일 때 class="model" | 표준사전일 때 class="dic" -->
+                                    <div class="txt">
+                                        <p class="ctg model">여객시스템</p>
+                                        <ul class="list">
+                                            <li>DB명 : <span>DBMS NAME</span></li>
+                                            <li>최근갱신일 : <span>DBMS NAME</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="desc">데이터설명이 들어가는 영역이라 가장길게 들어가는  영역입니다 데이터설명이 들어가는 영역이라 가장길게 들어가는  영역입니다  두줄이 들어갑니다.    데이터설명이 들어가는 영역이라 가장길게 들어가는  영역입니다  두줄이 들어갑니다.</div>
+                                    <table class="tb_fixed">
+                                        <tr>
+                                            <th>테이블 물리명</th>
+                                            <td>TABLE NAME</td>
+                                            <th>흐름분석</th>
+                                            <td>Y</td>
+                                        </tr>
+                                        <tr>
+                                            <th>담당부서</th>
+                                            <td>여객 시스템 부서</td>
+                                            <th>품질분석</th>
+                                            <td>Y</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="btns_inn"> 
+                                    <ul class="list">
+                                        <li>조회수 <span>91</span>회</li>
+                                        <li>다운로드 횟수 <span>91</span>회</li>
+                                    </ul>
+                                    <div class="btn">
+                                        <a href="javascript:void(0)" class="detail">상세조회</a>
+                                        <a href="javascript:void(0)" class="system">시스템 사용요청</a>
+                                        <a href="javascript:void(0)" class="dataset">데이터셋 요청</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="title_inn">
+                                    <div class="txt">
+                                        <!-- 모델일 때 class="model" | 표준사전일 때 class="dic" -->
+                                        <p class="title model">여객열차</p>
+                                        <!-- 공개불가일 때 class="private" | 전체공개일 때 class="public" -->
+                                        <span class="status public">전체공개</span>
+                                    </div>
+                                    <div class="icon">
+                                        <a href="javascript:void(0)" class="like">565</a>
+                                        <a href="javascript:void(0)" class="mark">565</a>
+                                        <a href="javascript:void(0)" class="comment">565</a>
+                                    </div>
+                                </div>
+                                <div class="info_inn">
+                                    <!-- 모델일 때 class="model" | 표준사전일 때 class="dic" -->
+                                    <div class="txt">
+                                        <p class="ctg model">여객시스템</p>
+                                        <ul class="list">
+                                            <li>DB명 : <span>DBMS NAME</span></li>
+                                            <li>최근갱신일 : <span>DBMS NAME</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="desc">데이터설명이 들어가는 영역이라 가장길게 들어가는  영역입니다 데이터설명이 들어가는 영역이라 가장길게 들어가는  영역입니다  두줄이 들어갑니다.    데이터설명이 들어가는 영역이라 가장길게 들어가는  영역입니다  두줄이 들어갑니다.</div>
+                                    <table class="tb_fixed">
+                                        <tr>
+                                            <th>테이블 물리명</th>
+                                            <td>TABLE NAME</td>
+                                            <th>흐름분석</th>
+                                            <td>Y</td>
+                                        </tr>
+                                        <tr>
+                                            <th>담당부서</th>
+                                            <td>여객 시스템 부서</td>
+                                            <th>품질분석</th>
+                                            <td>Y</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="btns_inn"> 
+                                    <ul class="list">
+                                        <li>조회수 <span>91</span>회</li>
+                                        <li>다운로드 횟수 <span>91</span>회</li>
+                                    </ul>
+                                    <div class="btn">
+                                        <a href="javascript:void(0)" class="detail">상세조회</a>
+                                        <a href="javascript:void(0)" class="system">시스템 사용요청</a>
+                                        <!-- class="disable" 추가 시 비활성화 버튼 스타일 -->
+                                        <a href="javascript:void(0)" class="dataset disable">데이터셋 요청</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="title_inn">
+                                    <div class="txt">
+                                        <!-- 모델일 때 class="model" | 표준사전일 때 class="dic" -->
+                                        <p class="title model">여객열차</p>
+                                        <!-- 공개불가일 때 class="private" | 전체공개일 때 class="public" -->
+                                        <span class="status public">전체공개</span>
+                                    </div>
+                                    <div class="icon">
+                                        <a href="javascript:void(0)" class="like">565</a>
+                                        <a href="javascript:void(0)" class="mark">565</a>
+                                        <a href="javascript:void(0)" class="comment">565</a>
+                                    </div>
+                                </div>
+                                <div class="info_inn">
+                                    <!-- 모델일 때 class="model" | 표준사전일 때 class="dic" -->
+                                    <div class="txt">
+                                        <p class="ctg model">여객시스템</p>
+                                        <ul class="list">
+                                            <li>DB명 : <span>DBMS NAME</span></li>
+                                            <li>최근갱신일 : <span>DBMS NAME</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="desc">데이터설명이 들어가는 영역이라 가장길게 들어가는  영역입니다 데이터설명이 들어가는 영역이라 가장길게 들어가는  영역입니다  두줄이 들어갑니다.    데이터설명이 들어가는 영역이라 가장길게 들어가는  영역입니다  두줄이 들어갑니다.</div>
+                                    <table class="tb_fixed">
+                                        <tr>
+                                            <th>테이블 물리명</th>
+                                            <td>TABLE NAME</td>
+                                            <th>흐름분석</th>
+                                            <td>Y</td>
+                                        </tr>
+                                        <tr>
+                                            <th>담당부서</th>
+                                            <td>여객 시스템 부서</td>
+                                            <th>품질분석</th>
+                                            <td>Y</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="btns_inn"> 
+                                    <ul class="list">
+                                        <li>조회수 <span>91</span>회</li>
+                                        <li>다운로드 횟수 <span>91</span>회</li>
+                                    </ul>
+                                    <div class="btn">
+                                        <a href="javascript:void(0)" class="detail">상세조회</a>
+                                        <a href="javascript:void(0)" class="system">시스템 사용요청</a>
+                                        <!-- class="disable" 추가 시 비활성화 버튼 스타일 -->
+                                        <a href="javascript:void(0)" class="dataset disable">데이터셋 요청</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page">
+                            <!-- class="on" 추가 시 페이지 활성화 -->
+                            <a href="javascript:void(0)" class="first"></a>
+                            <a href="javascript:void(0)" class="prev"></a>
+                            <a href="javascript:void(0)" class="on">1</a>
+                            <a href="javascript:void(0)" class="">2</a>
+                            <a href="javascript:void(0)" class="">3</a>
+                            <a href="javascript:void(0)" class="">4</a>
+                            <a href="javascript:void(0)" class="">5</a>
+                            <a href="javascript:void(0)" class="next"></a>
+                            <a href="javascript:void(0)" class="last"></a>
+                        </div>
+                    </div>
+                    <!-- 표준사전 (카드) | class="on" 추가 시 내용 보임 -->
+                    <div class="search_tab_con dic">
+                        <div class="search_util_wrap">
+                            <div class="title_area">
+                                <p class="title">표준사전</p>
+                                <div class="cnt">
+                                    <p>검색결과 <span>9,999</span></p>
+                                    <span class="txt">건</span>
+                                </div>
+                                <div class="keyword">
+                                    <p>검색키워드 :</p>
+                                    <ul>
+                                        <li>여객</li>
+                                        <li>운송</li>
+                                        <li>시설</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sort_area">
+                                <div class="list">
+                                    <a  href="java script:void(0)" class="on">유사도</a>
+                                    <a href="javascript:void(0)">다운로드순</a>
+                                    <a href="javascript:void(0)">조회순</a>
+                                    <a href="javascript:void(0)">좋아요순</a>
+                                    <a href="javascript:void(0)">최신순</a>
+                                </div>
+                                <div class="toggle">
+                                    <a href="javascript:void(0)" class="card on">Card</a>
+                                    <a href="javascript:void(0)" class="grid">Grid</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid_area">
+                            <div class="box">
+                                <div class="title_inn">
+                                    <div class="txt">
+                                        <!-- 모델일 때 class="model" | 표준사전일 때 class="dic" -->
+                                        <p class="title dic">여객<span class="eng">/ 영문명: <b>DBMS NAME</b></span></p>
+                                        <!-- 공개불가일 때 class="private" | 전체공개일 때 class="public" -->
+                                        <span class="status public">전체공개</span>
+                                    </div>
+                                    <div class="icon">
+                                        <a href="javascript:void(0)" class="like">565</a>
+                                        <a href="javascript:void(0)" class="comment">565</a>
+                                    </div>
+                                </div>
+                                <div class="info_inn">
+                                    <!-- 모델일 때 class="model" | 표준사전일 때 class="dic" -->
+                                    <div class="txt">
+                                        <p class="ctg dic">용어</p>
+                                        <ul class="list">
+                                            <li>DB명 : <span>DBMS NAME</span></li>
+                                            <li>최근갱신일 : <span>DBMS NAME</span></li>
+                                            <li class="classify">구분 : <span>기본단어</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="desc">데이터설명이 들어가는 영역이라 가장길게 들어가는  영역입니다 데이터설명이 들어가는 영역이라 가장길게 들어가는  영역입니다  두줄이 들어갑니다.    데이터설명이 들어가는 영역이라 가장길게 들어가는  영역입니다  두줄이 들어갑니다.</div>
+                                    <table class="tb_fixed">
+                                        <tr>
+                                            <th>참조개수</th>
+                                            <td>19</td>
+                                            <th>참조 시스템 개수</th>
+                                            <td>10</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="btns_inn"> 
+                                    <ul class="list">
+                                        <li>조회수 <span>91</span>회</li>
+                                        <li>다운로드 횟수 <span>91</span>회</li>
+                                    </ul>
+                                    <div class="btn">
+                                        <a href="javascript:void(0)" class="detail">상세조회</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="title_inn">
+                                    <div class="txt">
+                                        <!-- 모델일 때 class="model" | 표준사전일 때 class="dic" -->
+                                        <p class="title dic">여객<span class="eng">/ 영문명: <b>DBMS NAME</b></span></p>
+                                        <!-- 공개불가일 때 class="private" | 전체공개일 때 class="public" -->
+                                        <span class="status public">전체공개</span>
+                                    </div>
+                                    <div class="icon">
+                                        <a href="javascript:void(0)" class="like">565</a>
+                                        <a href="javascript:void(0)" class="comment">565</a>
+                                    </div>
+                                </div>
+                                <div class="info_inn">
+                                    <!-- 모델일 때 class="model" | 표준사전일 때 class="dic" -->
+                                    <div class="txt">
+                                        <p class="ctg dic">용어</p>
+                                        <ul class="list">
+                                            <li>DB명 : <span>DBMS NAME</span></li>
+                                            <li>최근갱신일 : <span>DBMS NAME</span></li>
+                                            <li class="classify">구분 : <span>기본단어</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="desc">데이터설명이 들어가는 영역이라 가장길게 들어가는  영역입니다 데이터설명이 들어가는 영역이라 가장길게 들어가는  영역입니다  두줄이 들어갑니다.    데이터설명이 들어가는 영역이라 가장길게 들어가는  영역입니다  두줄이 들어갑니다.</div>
+                                    <table class="tb_fixed">
+                                        <tr>
+                                            <th>참조개수</th>
+                                            <td>19</td>
+                                            <th>참조 시스템 개수</th>
+                                            <td>10</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="btns_inn"> 
+                                    <ul class="list">
+                                        <li>조회수 <span>91</span>회</li>
+                                        <li>다운로드 횟수 <span>91</span>회</li>
+                                    </ul>
+                                    <div class="btn">
+                                        <a href="javascript:void(0)" class="detail">상세조회</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="title_inn">
+                                    <div class="txt">
+                                        <!-- 모델일 때 class="model" | 표준사전일 때 class="dic" -->
+                                        <p class="title dic">여객<span class="eng">/ 영문명: <b>DBMS NAME</b></span></p>
+                                        <!-- 공개불가일 때 class="private" | 전체공개일 때 class="public" -->
+                                        <span class="status private">공개불가</span>
+                                    </div>
+                                    <div class="icon">
+                                        <a href="javascript:void(0)" class="like">565</a>
+                                        <a href="javascript:void(0)" class="comment">565</a>
+                                    </div>
+                                </div>
+                                <div class="info_inn">
+                                    <!-- 모델일 때 class="model" | 표준사전일 때 class="dic" -->
+                                    <div class="txt">
+                                        <p class="ctg dic">용어</p>
+                                        <ul class="list">
+                                            <li>DB명 : <span>DBMS NAME</span></li>
+                                            <li>최근갱신일 : <span>DBMS NAME</span></li>
+                                            <li class="classify">구분 : <span>기본단어</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="desc">데이터설명이 들어가는 영역이라 가장길게 들어가는  영역입니다 데이터설명이 들어가는 영역이라 가장길게 들어가는  영역입니다  두줄이 들어갑니다.    데이터설명이 들어가는 영역이라 가장길게 들어가는  영역입니다  두줄이 들어갑니다.</div>
+                                    <table class="tb_fixed">
+                                        <tr>
+                                            <th>참조개수</th>
+                                            <td>19</td>
+                                            <th>참조 시스템 개수</th>
+                                            <td>10</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="btns_inn"> 
+                                    <ul class="list">
+                                        <li>조회수 <span>91</span>회</li>
+                                        <li>다운로드 횟수 <span>91</span>회</li>
+                                    </ul>
+                                    <div class="btn">
+                                        <a href="javascript:void(0)" class="detail">상세조회</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="title_inn">
+                                    <div class="txt">
+                                        <!-- 모델일 때 class="model" | 표준사전일 때 class="dic" -->
+                                        <p class="title dic">여객<span class="eng">/ 영문명: <b>DBMS NAME</b></span></p>
+                                        <!-- 공개불가일 때 class="private" | 전체공개일 때 class="public" -->
+                                        <span class="status public">전체공개</span>
+                                    </div>
+                                    <div class="icon">
+                                        <a href="javascript:void(0)" class="like">565</a>
+                                        <a href="javascript:void(0)" class="comment">565</a>
+                                    </div>
+                                </div>
+                                <div class="info_inn">
+                                    <!-- 모델일 때 class="model" | 표준사전일 때 class="dic" -->
+                                    <div class="txt">
+                                        <p class="ctg dic">용어</p>
+                                        <ul class="list">
+                                            <li>DB명 : <span>DBMS NAME</span></li>
+                                            <li>최근갱신일 : <span>DBMS NAME</span></li>
+                                            <li class="classify">구분 : <span>기본단어</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="desc">데이터설명이 들어가는 영역이라 가장길게 들어가는  영역입니다 데이터설명이 들어가는 영역이라 가장길게 들어가는  영역입니다  두줄이 들어갑니다.    데이터설명이 들어가는 영역이라 가장길게 들어가는  영역입니다  두줄이 들어갑니다.</div>
+                                    <table class="tb_fixed">
+                                        <tr>
+                                            <th>참조개수</th>
+                                            <td>19</td>
+                                            <th>참조 시스템 개수</th>
+                                            <td>10</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="btns_inn"> 
+                                    <ul class="list">
+                                        <li>조회수 <span>91</span>회</li>
+                                        <li>다운로드 횟수 <span>91</span>회</li>
+                                    </ul>
+                                    <div class="btn">
+                                        <a href="javascript:void(0)" class="detail">상세조회</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page">
+                            <!-- class="on" 추가 시 페이지 활성화 -->
+                            <a href="javascript:void(0)" class="first"></a>
+                            <a href="javascript:void(0)" class="prev"></a>
+                            <a href="javascript:void(0)" class="on">1</a>
+                            <a href="javascript:void(0)" class="">2</a>
+                            <a href="javascript:void(0)" class="">3</a>
+                            <a href="javascript:void(0)" class="">4</a>
+                            <a href="javascript:void(0)" class="">5</a>
+                            <a href="javascript:void(0)" class="next"></a>
+                            <a href="javascript:void(0)" class="last"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 하단 공통 시작 -->
+        </div>
+    </div>
+    <!-- 그리드 js -->
+    <script src="../../js/agGrid/ag-grid-community.js"></script>
+    <script src="../../js/agGrid/ag-grid-community.noStyle.js"></script>
+    <script src="../../js/search/detailView.js"></script>
+
+    <!-- 하단 팝업 모두 class="on" 추가 시 활성화 -->
+     
+    <!-- 상세조회팝업 -->
+    <!-- 상세조회버튼 클릭 시 활성화 -->
+    <div class="layer_popup on" id="">
+        <div class="popup_box detail_popup">
+            <button class="btn pop_close">
+                <span class="sr_only">팝업닫기버튼</span>
+            </button>
+            <div class="pop_title">
+                <p>상세조회</p>
+            </div>
+            <div class="pop_con">
+                <div class="title_btn_area">
+                    <p class="pop_sub_title">여객열차</p>
+                    <!-- 모델일 때만 보이기 -->
+                    <button class="mark"><span class="sr_only">즐겨찾기</span></button>
+                    <button class="like">좋아요</button>
+                </div>
+                <!-- 탭 -->
+                <div class="popup_tab_area">
+                    <!-- class="on" 추가 시 활성화 -->
+                    <a href="javascript:void(0)" class="on">개요</a>
+                    <a href="javascript:void(0)">메타</a>
+                    <a href="javascript:void(0)">표준사전</a>
+                    <a href="javascript:void(0)">품질</a>
+                    <a href="javascript:void(0)">흐름</a>
+                    <a href="javascript:void(0)">데이터미리보기</a>
+                    <a href="javascript:void(0)" class="data_error_tab">데이터오류접수</a>
+                    <a href="javascript:void(0)">댓글 남기기</a>
+                </div>
+                <!-- 탭 내용 -->
+                <div class="popup_tab_con_area">
+                    <!-- 개요 -->
+                    <div class="tab_con on">
+                        <div class="pop_con_title">
+                            <p>개요</p>
+                        </div>
+                        <div class="pop_table_area">
+                            <table class="tb_fixed">
+                                <tr>
+                                    <th>메타유형</th>
+                                    <td>모델</td>
+                                    <th>메타 구분</th>
+                                    <td>메타시스템</td>
+                                </tr>
+                                <tr>
+                                    <th>메타 명</th>
+                                    <td>테이블명</td>
+                                    <th>공개 수준</th>
+                                    <td>전체공개</td>
+                                </tr>
+                                <tr>
+                                    <th>최종 변경일시</th>
+                                    <td colspan="3">2024-12-24 12:00:00</td>
+                                </tr>
+                            </table>
+                            <table class="tb_fixed">
+                                <tr>
+                                    <th>정보 시스템 명</th>
+                                    <td>발권 시스템</td>
+                                    <th>구축일자</th>
+                                    <td>2021-02-01</td>
+                                </tr>
+                                <tr>
+                                    <th>운영부서명</th>
+                                    <td>발권 부서</td>
+                                    <th>담당자 명</th>
+                                    <td>홍길동</td>
+                                </tr>
+                                <tr>
+                                    <th>DBMS 정보</th>
+                                    <td>Oracle 21c</td>
+                                    <th>운영체제 정보</th>
+                                    <td>Rockey Linux 8.3</td>
+                                </tr>
+                                <tr>
+                                    <th>데이터셋 제공 여부</th>
+                                    <td>Y</td>
+                                    <th>개인정보 포함 여부</th>
+                                    <td>Y</td>
+                                </tr>
+                                <tr>
+                                    <th>품질분석 여부</th>
+                                    <td>Y</td>
+                                    <th>흐름 분석 여부</th>
+                                    <td>Y</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- 메타 -->
+                    <div class="tab_con">
+                        <div class="pop_con_title">
+                            <p>메타</p>
+                        </div>
+                        <div class="pop_table_area">
+                            <table class="tb_fixed">
+                                <tr>
+                                    <th>논리명</th>
+                                    <td>
+                                        <div class="btn_txt_inn">
+                                            <span class="underline">DB논리명</span>
+                                            <a href="javascript:void(0)" class="meta prd">메타</a>
+                                        </div>
+                                    </td>
+                                    <th>물리명</th>
+                                    <td>
+                                        <div class="btn_txt_inn">
+                                            <span class="underline">DBMS_NAME</span>
+                                            <a href="javascript:void(0)" class="meta prd">메타</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>DB 설명</th>
+                                    <td>DB를 설명합니다.</td>
+                                    <th>최종 갱신일</th>
+                                    <td>2024-12-31</td>
+                                </tr>
+                                <tr>
+                                    <th>주제 영역</th>
+                                    <td>업무</td>
+                                    <th>테이블 소유자</th>
+                                    <td>SCHEMA</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="grid_wrap">
+                            <div id="meta_grid" class="ag-theme-quartz"  style="height: 272px; margin-top: 20px;"></div>
+                        </div>
+                    </div> 
+                    <!-- 표준사전 -->
+                    <div class="tab_con">
+                        <div class="pop_con_title">
+                            <p>표준사전</p>
+                        </div>
+                        <div class="pop_table_area">
+                            <table class="tb_fixed">
+                                <tr>
+                                    <th>도메인 명 </th>
+                                    <td>
+                                        <div class="btn_txt_inn">
+                                            <span class="underline">명_V50</span>
+                                            <a href="javascript:void(0)" class="meta prd">메타</a>
+                                        </div>
+                                    </td>  
+                                    <th>메인 영문명</th>
+                                    <td>
+                                        <div class="btn_txt_inn">
+                                            <span class="underline">NM_V50</span>
+                                            <a href="javascript:void(0)" class="meta prd">메타</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>정의</th>
+                                    <td colspan="3">DB를 설명합니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>도메인 유형</th>
+                                    <td>코드</td>
+                                    <th>도메인 유형 소분류</th>
+                                    <td>통합</td>
+                                </tr>
+                                <tr>
+                                    <th>데이터 타입</th>
+                                    <td>VARCHAR(50)</td>
+                                    <th>업무 구분</th>
+                                    <td>Product</td>
+                                </tr>
+                                <tr>
+                                    <th>개인정보대상여부</th>
+                                    <td>N</td>
+                                    <th>최종변경일</th>
+                                    <td>2024-12-25</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="popup_grid_set">
+                            <div class="grid_wrap">
+                                <p class="grid_cnt"><span>9,999</span>건</p>
+                                <div id="dic_system_grid" class="ag-theme-quartz"  style="height: 272px;"></div>
+                            </div> 
+                            <div class="grid_wrap">
+                                <p class="grid_cnt"><span>9,999</span>건</p>
+                                <div id="dic_table_grid" class="ag-theme-quartz"  style="height: 272px;"></div>
+                            </div>
+                            <div class="grid_wrap">
+                                <p class="grid_cnt"><span>9,999</span>건</p>
+                                <div id="dic_column_grid" class="ag-theme-quartz"  style="height: 272px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 품질 -->
+                    <div class="tab_con">
+                        <div class="pop_con_title">
+                            <p>표준사전</p>
+                        </div>
+                        <div class="pop_table_area">
+                            <table class="tb_fixed">
+                                <tr>
+                                    <th>논리 DB명</th>
+                                    <td>
+                                        <div class="btn_txt_inn">
+                                            <span class="underline">DB논리명</span>
+                                            <a href="javascript:void(0)" class="prd quality">품질</a>
+                                        </div>
+                                    </td>
+                                    <th>물리 DB 명</th>
+                                    <td>
+                                        <div class="btn_txt_inn">
+                                            <span class="underline">DBMS_NAME</span>
+                                            <a href="javascript:void(0)" class="prd quality">품질</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>최종 품질 측정 일시</th>
+                                    <td>2024-12-24</td>
+                                    <th>전체 ROW 수</th>
+                                    <td>9,999,999,999</td>
+                                </tr>
+                                <tr>
+                                    <th>측정 컬럼 수</th>
+                                    <td>13</td>
+                                    <th>점검 ROW 수</th>
+                                    <td>9,999,999,999</td>
+                                </tr>
+                                <tr>
+                                    <th>품질수준</th>
+                                    <td>89.992%</td>
+                                    <th>오류율</th>
+                                    <td>10.008%</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="grid_wrap">
+                            <div id="quality_grid" class="ag-theme-quartz multi_header" style="height: 298px; margin-top: 20px;"></div>
+                        </div>
+                    </div>
+                    <!-- 흐름 -->
+                    <div class="tab_con"></div>
+                    <!-- 데이터미리보기 -->
+                    <div class="tab_con">
+                        <div class="pop_con_title">
+                            <p>데이터 미리 보기</p>
+                        </div>
+                        <div class="pop_table_area">
+                            <table class="tb_fixed">
+                                <tr>
+                                    <th>논리명</th>
+                                    <td><a href="javascript:void(0)">DB논리명</a></td>
+                                    <th>물리명</th>
+                                    <td><a href="javascript:void(0)">DBMS_NAME</a></td>
+                                </tr>
+                                <tr>
+                                    <th>DB 설명</th>
+                                    <td colspan="3">DB를 설명합니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>주제영역</th>
+                                    <td>업무</td>
+                                    <th>테이블 소유자</th>
+                                    <td>SCHEMA</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="grid_desc_area">
+                            <p>운영 시스템 부하로 인해  최대 10건 만 미리보기로 제공합니다.  데이터셋은  상단의 데이터셋 요청을 이용 바랍니다.</p>
+                        </div>
+                        <div class="grid_wrap">
+                            <div id="data_preview" class="ag-theme-quartz multi_header"  style="height: 298px; margin-top: 8px;"></div>
+                        </div>
+                    </div>
+                    <!-- 데이터오류접수 -->
+                    <div class="tab_con">
+                        <div class="pop_con_title">
+                            <p>데이터 오류 접수</p>
+                            <span class="desc">데이터 오류 접수 건의 진행 상황 및 결과는 “마이 페이지 > 내 업무 > 데이터 오류 접수 관리” 에서 확인할 수 있습니다.</span>
+                        </div>
+                        <div class="pop_table_area">
+                            <table class="tb_fixed">
+                                <tr>
+                                    <th>담당자<span class="required">*</span></th>
+                                    <td><a href="javascript:void(0)">DB논리명</a></td>
+                                    <th>담당부서<span class="required">*</span></th>
+                                    <td>
+                                        <div class="btn_txt_inn">
+                                            <p>발권부서</p>
+                                            <div class="table_btn_inn">
+                                                <a href="javascript:void(0)" class="secondary">담당자선택</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>제목<span class="required">*</span></th>
+                                    <td colspan="3">데이터 오류 건 입니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>내용<span class="required">*</span></th>
+                                    <td colspan="3">
+                                        <!-- tinymice 에디터 적용 필요 -->
+                                        <textarea name="" id="" rows="15">내용입니다. (이미지 붙여 넣기 기능)</textarea>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- 댓글 남기기 -->
+                    <div class="tab_con">
+                        <div class="pop_con_title">
+                            <p>댓글 남기기</p>
+                        </div>
+                        <div class="grid_wrap">
+                            <div id="comment_grid" class="ag-theme-quartz" style="height: 272px;"></div>
+                        </div>
+                        <div class="pop_table_area">
+                            <table>
+                                <tr>
+                                    <th>코멘트</th>
+                                    <td>
+                                        <div class="comment_input">
+                                            <input type="text" placeholder="댓글을 입력해주세요.">
+                                            <a href="javascript:void(0)">저장</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pop_btn">
+                <button class="secondary pop_close">닫기</button>
+                <!-- 데이터 오류접수 팝업 일 때만 뜨기 -->
+                <button class="secondary data_error_btn">오류접수등록</button>
+                <button class="primary">데이터셋요청</button>
+            </div>
+        </div>
+    </div>
+    <!-- 부서/사용자 팝업 -->
+    <!-- 상세조회팝업 > 데이터오류접수(탭) - 담당자선택 버튼 클릭 시 활성화 -->
+    <div class="layer_popup user_select on" id="">
+        <div class="popup_box user_popup">
+            <button class="btn pop_close">
+                <span class="sr_only">팝업닫기버튼</span>
+            </button>
+            <div class="pop_title">
+                <p>부서/사용자</p>
+            </div>
+            <div class="pop_con">
+                <form action="">
+                    <div class="pop_search_area">
+                        <fieldset class="item_inn">
+                            <div class="item">
+                                <label for="">성명/부서명</label>
+                                <div class="sel_int">
+                                    <div class="select_custom">
+                                        <select id="">
+                                            <option>선택</option>
+                                            <option>선택</option>
+                                            <option>선택</option>
+                                        </select>
+                                    </div>
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </fieldset> 
+                        <div class="btn_inn">
+                            <a href="javascript:void(0)" class="primary">검색</a>
+                        </div>
+                    </div>
+                </form>
+                <div class="user_select_area">
+                    <!-- 디자인 참고 퍼블 -->
+                    <div class="list">
+                        <ul>
+                            <li>
+                               <a href="javascript:void(0)" class="on">부서1</a>
+                                <div class="sub_list">
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:void(0)">사용자1/대리</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">사용자2/과장</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li>
+                               <a href="javascript:void(0)" class="on">부서1</a>
+                                <div class="sub_list">
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:void(0)">사용자1/대리</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">사용자2/과장</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li>
+                               <a href="javascript:void(0)" class="on">부서1</a>
+                                <div class="sub_list">
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:void(0)">사용자1/대리</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)">사용자2/과장</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="pop_btn">
+                <button class="primary">선택</button>
+            </div>
+        </div>
+    </div>
+    <!-- 오류접수문의 등록 "확인" 팝업 -->
+    <!-- 상세조회팝업 > 데이터오류접수(탭) - 오류접수등록 버튼 클릭 시 활성화 -->
+    <div class="alert_layer_popup on" id="">
+        <div class="popup_box">
+            <div class="pop_con">
+                <div class="alert_icon">
+                    <img src="../../img/alert_popup_gray_icon.svg" alt="알럿 아이콘">
+                </div>
+                <div class="pop_txt">
+                    <div class="error_register">오류접수 문의를 하시겠습니까?</div>
+                </div>
+            </div>
+            <div class="pop_btn">
+                <button class="secondary pop_close">닫기</button>
+                <button class="primary">저장</button>
+            </div>
+        </div>
+    </div>
+    <!-- 오류접수문의 등록 "완료" 팝업 -->
+    <!-- 상세조회팝업 > 데이터오류접수(탭) - 오류접수등록 완료 후 활성화 -->
+    <div class="alert_layer_popup on" id="">
+        <div class="popup_box">
+            <div class="pop_con">
+                <div class="alert_icon">
+                    <img src="../../img/alert_popup_gray_icon.svg" alt="알럿 아이콘">
+                </div>
+                <div class="pop_txt">
+                    <div class="error_register_confirm">편집한 이력데이터 오류 접수 건의 진행 상황 및 결과는 <span>"마이 페이지 > 내 업무 > 데이터 오류 접수 관리"</span>에서 확인할 수 있습니다. </div>
+                </div>
+            </div>
+            <div class="pop_btn">
+                <button class="primary pop_close">확인</button>
+            </div>
+        </div>
+    </div>
+ </body>
+</html>
+<!-- 하단 공통 끝 -->

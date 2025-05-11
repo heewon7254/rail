@@ -1,0 +1,927 @@
+<!-- 상단 공통 시작 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>통합검색결과</title>
+    <link rel="stylesheet" href="../../css/font.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../../css/grid_sample.css">
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+<body> 
+    <!-- class="active" 추가 시 서브메뉴 보임 -->
+    <header>
+        <div class="con">
+            <div class="gnb_wrap">
+                <div class="h_left">
+                    <button class="all_menu open_popup" data-popup="site_map_popup"><span class="sr_only">전체메뉴보기</span></button>
+                    <h1><span class="sr_only">코레일 로고</span></h1>
+                </div>
+                <nav>
+                    <ul class="gnb">
+                        <!-- class="on" 추가 시 페이지 활성화 표시 -->
+                        <li>
+                            <a href="javascript:void(0)"><span>서비스 소개</span></a>
+                             <div class="lnb_wrap">
+                                <ul class="lnb">
+                                    <li><a href="javascript:void(0)">서비스 개요</a></li>
+                                    <li><a href="javascript:void(0)">활용방법</a></li>
+                                    <li><a href="javascript:void(0)">운영조직</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><span>데이터 현황</span></a>
+                            <div class="lnb_wrap">
+                                <ul class="lnb">
+                                    <li><a href="javascript:void(0)">분류체계</a></li>
+                                    <li><a href="javascript:void(0)">데이터 맵</a></li>
+                                </ul>
+                            </div>
+                        </li> 
+                        <li>
+                            <a href="javascript:void(0)"><span>데이터 시각화</span></a>
+                            <div class="lnb_wrap">
+                                <ul class="lnb">
+                                    <li><a href="javascript:void(0)">메타 현황</a></li>
+                                    <li><a href="javascript:void(0)">메타 관리 현황</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><span>커뮤니티</span></a>
+                            <div class="lnb_wrap">  
+                                <ul class="lnb">
+                                    <li><a href="javascript:void(0)">공지사항</a></li>
+                                    <li><a href="javascript:void(0)">Q&A</a></li>
+                                    <li><a href="javascript:void(0)">자료실</a></li>
+                                    <li><a href="javascript:void(0)">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><span>마이페이지</span></a>
+                            <div class="lnb_wrap">
+                                <ul class="lnb">
+                                    <li><a href="javascript:void(0)">내 업무</a></li>
+                                    <li><a href="javascript:void(0)">메타관리</a></li>
+                                    <li><a href="javascript:void(0)">품질관리</a></li>
+                                    <li><a href="javascript:void(0)">흐름관리</a></li>
+                                    <li><a href="javascript:void(0)">카탈로그관리</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="h_right">
+                    <div class="header_search">
+                        <button class="open_popup" data-popup="heaader_search_popup"><span class="sr_only">검색</span></button>
+                    </div>
+                    <div class="header_alarm">
+                        <span class="cnt">27</span>
+                        <button class="txt">알림</button>
+                    </div>
+                    <div class="header_login">
+                        <span class="txt">김한국님_디지털기획부</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="layer_bk"></div>
+    <!-- 전체메뉴 팝업 -->
+    <div class="layer_popup" id="site_map_popup">
+        <div class="popup_box">
+            <div class="pop_title">
+                <p class="site_map_title">전체메뉴</p>
+            </div>
+            <div class="pop_con" tabindex="0">
+                <div class="site_map">
+                    <div class="menu_item">
+                        <a href="javascript:void(0)">서비스 소개</a>
+                        <ul class="sub_menu_item">
+                            <li><a href="javascript:void(0)">서비스개요</a></li>
+                            <li><a href="javascript:void(0)">활용방법</a></li>
+                            <li><a href="javascript:void(0)">운영조직</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_item">
+                        <a href="javascript:void(0)">데이터 현황</a>
+                        <ul class="sub_menu_item">
+                            <li><a href="javascript:void(0)">분류체계</a></li>
+                            <li><a href="javascript:void(0)">데이터맵</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_item">
+                        <a href="javascript:void(0)">데이터 시각화</a>
+                        <ul class="sub_menu_item">
+                            <li><a href="javascript:void(0)">메타 현황</a></li>
+                            <li><a href="javascript:void(0)">메타 관리 현황</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_item">
+                        <a href="javascript:void(0)">커뮤니티</a>
+                        <ul class="sub_menu_item">
+                            <li><a href="javascript:void(0)">공지사항</a></li>
+                            <li><a href="javascript:void(0)">Q&A</a></li>
+                            <li><a href="javascript:void(0)">자료실</a></li>
+                            <li><a href="javascript:void(0)">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_item mypage">
+                        <a href="javascript:void(0)">마이페이지</a>
+                        <div class="link_area">
+                            <a href="javascript:void(0)" class="task">내 업무</a>
+                            <a href="javascript:void(0)">메타관리</a>
+                            <a href="javascript:void(0)">품질관리</a>
+                            <a href="javascript:void(0)">흐름관리</a>
+                            <a href="javascript:void(0)">카탈로그 관리</a>
+                        </div>
+                        <div class="sub_menu_area">
+                            <div class="item">
+                                <a href="javascript:void(0)" class="third_level">개인화설정</a>
+                                <ul class="sub_menu_item">
+                                    <li><a href="javascript:void(0)">즐겨찾기 목록 관리</a></li>
+                                </ul>
+                            </div>
+                            <div class="item">
+                                <a href="javascript:void(0)" class="third_level">내 업무</a>
+                                <ul class="sub_menu_item">
+                                    <li><a href="javascript:void(0)">내 업무 요약</a></li>
+                                    <li><a href="javascript:void(0)">데이터셋 요청 결재 관리</a></li>
+                                    <li><a href="javascript:void(0)">데이터 요청 현황/다운로드</a></li>
+                                    <li><a href="javascript:void(0)">데이터 오류 접수 관리</a></li>
+                                    <li><a href="javascript:void(0)">데이터 수요 요청 관리</a></li>
+                                    <li><a href="javascript:void(0)">정보 시스템 신청 현황</a></li>
+                                    <li><a href="javascript:void(0)">알림 이력 관리</a></li>
+                                </ul>
+                            </div>
+                            <div class="item">
+                                <a href="javascript:void(0)" class="third_level">관리 - 일반</a>
+                                <ul class="sub_menu_item">
+                                    <li><a href="javascript:void(0)">역할 관리</a></li>
+                                    <li><a href="javascript:void(0)">메뉴 관리</a></li>
+                                    <li><a href="javascript:void(0)">부서/사용자 관리</a></li>
+                                    <li><a href="javascript:void(0)">메뉴 별 역할 관리</a></li>
+                                    <li><a href="javascript:void(0)">부서/사용자 별 역할 관리</a></li>
+                                    <li><a href="javascript:void(0)">결재선 관리</a></li>
+                                    <li><a href="javascript:void(0)">포털 공통 코드 관리</a></li>
+                                    <li><a href="javascript:void(0)">정보 시스템 사용 요청 관리</a></li>
+                                    <li><a href="javascript:void(0)">정보 시스템 사용 동의서 관리</a></li>
+                                </ul>
+                            </div>
+                            <div class="item">
+                                <a href="javascript:void(0)" class="third_level">관리 - 제품 연계 관리</a>
+                                <ul class="sub_menu_item">
+                                    <li><a href="javascript:void(0)">메타 시스템 관리</a></li>
+                                    <li><a href="javascript:void(0)">제품 사용 설정 관리</a></li>
+                                    <li><a href="javascript:void(0)">포털 배치 관리</a></li>
+                                    <li><a href="javascript:void(0)">통합 배치 모니터링</a></li>
+                                    <li><a href="javascript:void(0)">이루다 설정 관리</a></li>
+                                </ul> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn pop_close large">
+                <span class="sr_only">팝업닫기버튼</span>
+            </button>
+        </div>
+    </div>
+    <!-- 헤더 검색창 팝업 -->
+    <div class="layer_popup" id="heaader_search_popup">
+        <div class="popup_box">
+            <button class="btn pop_close large">
+                <span class="sr_only">팝업닫기버튼</span>
+            </button>
+            <div class="pop_con">
+                <div class="search_pop_con">
+                    <div class="search_pop_int">
+                        <input type="text" placeholder="검색어를 입력해 주세요.">
+                        <button class="pop_search_btn">
+                            <span class="sr_only">검색버튼</span>
+                        </button>
+                    </div>
+                    <div class="search_pop_option">
+                        <p>검색옵션</p>
+                        <div class="radio_btn">
+                            <label class="radio_s">
+                                <input type="radio" name="radio">
+                                <span class="radio_mark" aria-hidden="true"></span>
+                                <span class="radio_txt">or검색</span>
+                            </label>
+                            <label class="radio_s">
+                                <input type="radio" name="radio">
+                                <span class="radio_mark" aria-hidden="true"></span>
+                                <span class="radio_txt">and검색</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pop_btn">
+                <button class="secondary pop_close">닫기</button>
+            </div>
+        </div>
+    </div>
+    <!-- 알람 레이어 팝업 -->
+    <div class="alarm_layer_popup">
+        <div class="popup_box">
+            <div class="title">알림</div>
+            <div class="tab">
+                <!-- class="active" 추가 시 활성화 -->
+                <button class="active">결재<span>999</span></button>
+                <button>요청<span>999</span></button>
+                <button>전체<span>999</span></button> 
+            </div>
+            <div class="list">
+                <div class="item">
+                    <div class="ctg">
+                        <!-- class="blue"결재요청 | class="black" 결재완료 -->
+                        <span class="blue">결재요청</span>
+                        <span>정보시스템</span>
+                    </div>
+                    <div class="con_title">시스템명 / 결제요청 건</div>
+                    <div class="etc"> 
+                        <p>2024-08-18 12:12:12</p>
+                        <div class="btn">
+                            <a href="javascript:void(0)">읽음</a>
+                            <a href="javascript:void(0)" class="link">이동</a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ctg">
+                        <!-- class="blue"결재요청 | class="black" 결재완료 -->
+                        <span class="black">결재완료</span>
+                        <span>정보시스템</span>
+                    </div>
+                    <div class="con_title">시스템명 / 결제요청 건</div>
+                    <div class="etc"> 
+                        <p>2024-08-18 12:12:12</p>
+                        <div class="btn">
+                            <a href="javascript:void(0)">읽음</a>
+                            <a href="javascript:void(0)" class="link">이동</a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ctg">
+                        <!-- class="blue"결재요청 | class="black" 결재완료 -->
+                        <span class="blue">결재요청</span>
+                        <span>정보시스템</span>
+                    </div>
+                    <div class="con_title">시스템명 / 결제요청 건</div>
+                    <div class="etc"> 
+                        <p>2024-08-18 12:12:12</p>
+                        <div class="btn">
+                            <a href="javascript:void(0)">읽음</a>
+                            <a href="javascript:void(0)" class="link">이동</a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ctg">
+                        <!-- class="blue"결재요청 | class="black" 결재완료 -->
+                        <span class="black">결재요청</span>
+                        <span>정보시스템</span>
+                    </div>
+                    <div class="con_title">시스템명 / 결제요청 건</div>
+                    <div class="etc"> 
+                        <p>2024-08-18 12:12:12</p>
+                        <div class="btn">
+                            <a href="javascript:void(0)">읽음</a>
+                            <a href="javascript:void(0)" class="link">이동</a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ctg">
+                        <!-- class="blue"결재요청 | class="black" 결재완료 -->
+                        <span class="blue">결재요청</span>
+                        <span>정보시스템</span>
+                    </div>
+                    <div class="con_title">시스템명 / 결제요청 건</div>
+                    <div class="etc"> 
+                        <p>2024-08-18 12:12:12</p>
+                        <div class="btn">
+                            <a href="javascript:void(0)">읽음</a>
+                            <a href="javascript:void(0)" class="link">이동</a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ctg">
+                        <!-- class="blue"결재요청 | class="black" 결재완료 -->
+                        <span class="black">결재요청</span>
+                        <span>정보시스템</span>
+                    </div>
+                    <div class="con_title">시스템명 / 결제요청 건</div>
+                    <div class="etc"> 
+                        <p>2024-08-18 12:12:12</p>
+                        <div class="btn">
+                            <a href="javascript:void(0)">읽음</a>
+                            <a href="javascript:void(0)" class="link">이동</a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ctg">
+                        <!-- class="blue"결재요청 | class="black" 결재완료 -->
+                        <span class="blue">결재요청</span>
+                        <span>정보시스템</span>
+                    </div>
+                    <div class="con_title">시스템명 / 결제요청 건</div>
+                    <div class="etc"> 
+                        <p>2024-08-18 12:12:12</p>
+                        <div class="btn">
+                            <a href="javascript:void(0)">읽음</a>
+                            <a href="javascript:void(0)" class="link">이동</a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <button class="alarm_close"><span class="sr_only">알림팝업닫기</span></button>
+        </div>
+    </div>
+    <div class="wrap">
+        <!-- 왼쪽 리스트 -->
+        <!-- 통합검색결과일 때 class="search_menu" 추가 -->
+        <aside class="search_menu">
+            <div class="aside_con">
+                <!-- 상세검색 -->
+                <div class="filter">
+                    <div class="selected">
+                        <p class="title">필터 목록</p> 
+                        <div class="item">
+                            <a href="javascript:void(0)" class="all_delete">
+                                <img src="../../img/aside_search_total_delete_icon.svg" alt="삭제 아이콘">전체삭제
+                            </a>
+                            <div class="list">
+                                <div class="s_title">메타 데이터 구분</div>
+                                <div class="set">
+                                    <p><span>#승차권승차권승차권승차권승차권승차권</span><a href="javascript:void(0)" class="delete"></a></p>
+                                    <p><span>#승차권</span><a href="javascript:void(0)" class="delete"></a></p>
+                                    <p><span>#승차권</span><a href="javascript:void(0)" class="delete"></a></p>
+                                    <p><span>#승차권</span><a href="javascript:void(0)" class="delete"></a></p>
+                                    <p><span>#승차권</span><a href="javascript:void(0)" class="delete"></a></p>
+                                </div>
+                            </div>
+                            <div class="list">
+                                <div class="s_title">품질 분석 구분</div>
+                                <div class="set">
+                                    <p><span>#승차권</span><a href="javascript:void(0)" class="delete"></a></p>
+                                    <p><span>#승차권</span><a href="javascript:void(0)" class="delete"></a></p>
+                                </div>
+                            </div>
+                            <div class="list">
+                                <div class="s_title">흐름 분석 구분</div>
+                                <div class="set">
+                                    <p><span>#Y</span><a href="javascript:void(0)" class="delete"></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="f_menu">
+                        <nav>
+                            <ul class="gnb"> 
+                                <!-- class="on" 추가 시 열림 -->
+                                <li class="on">
+                                    <a href="javascript:void(0)"><span>메타 데이터 구분</span></a>
+                                    <div class="ctg_area">
+                                        <div class="tree_list">
+                                            <div class="item">
+                                                <!-- class="on" 추가 시 하위 메뉴 보임 -->
+                                                <button class="slide_btn on"><span class="sr_only">슬라이드 버튼</span></button>
+                                                <!-- 대분류 선택됐을 시, class="active" 추가 -->
+                                                <div class="large_ctg">
+                                                    <label class="chk_s">
+                                                        <input type="checkbox">
+                                                        <span class="chk_img" aria-hidden="true"></span>
+                                                        <span class="chk_txt">모델</span>
+                                                    </label>
+                                                    <span class="cnt">9,999</span>
+                                                </div>
+                                                <!-- class="active" 추가 시 내용 보임 -->
+                                                <div class="sm_ctg">
+                                                    <ul class="list">
+                                                        <!-- 소분류 선택됐을 시, class="active" 추가 -->
+                                                        <li>
+                                                            <label class="chk_s">
+                                                                <input type="checkbox">
+                                                                <span class="chk_img" aria-hidden="true"></span>
+                                                                <span class="chk_txt">여객 시스템</span>
+                                                            </label>
+                                                            <span class="cnt">99</span>
+                                                        </li>
+                                                        <!-- 소분류 선택됐을 시, class="active" 추가 -->
+                                                        <li>
+                                                            <label class="chk_s">
+                                                                <input type="checkbox">
+                                                                <span class="chk_img" aria-hidden="true"></span>
+                                                                <span class="chk_txt">발권 시스템</span>
+                                                            </label>
+                                                            <span class="cnt">99</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <!-- class="on" 추가 시 하위 메뉴 보임 -->
+                                                <button class="slide_btn on"><span class="sr_only">슬라이드 버튼</span></button>
+                                                <!-- 대분류 선택됐을 시, class="active" 추가 -->
+                                                <div class="large_ctg">
+                                                    <label class="chk_s">
+                                                        <input type="checkbox" disabled>
+                                                        <span class="chk_img" aria-hidden="true"></span>
+                                                        <span class="chk_txt">표준사전</span>
+                                                    </label>
+                                                    <span class="cnt">9,999</span>
+                                                </div>
+                                                <!-- class="active" 추가 시 내용 보임 -->
+                                                <div class="sm_ctg">
+                                                    <ul class="list">
+                                                        <!-- 소분류 선택됐을 시, class="active" 추가 -->
+                                                        <li>
+                                                            <label class="chk_s">
+                                                                <input type="checkbox" disabled>
+                                                                <span class="chk_img" aria-hidden="true"></span>
+                                                                <span class="chk_txt">단어</span>
+                                                            </label>
+                                                            <span class="cnt">99</span>
+                                                        </li>
+                                                        <!-- 소분류 선택됐을 시, class="active" 추가 -->
+                                                        <li>
+                                                            <label class="chk_s">
+                                                                <input type="checkbox" disabled>
+                                                                <span class="chk_img" aria-hidden="true"></span>
+                                                                <span class="chk_txt">도메인</span>
+                                                            </label>
+                                                            <span class="cnt">99</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><span>품질 분석 구분</span></a>
+                                    <div class="ctg_area">
+                                        <div class="tree_list">
+                                            <div class="item">
+                                                <!-- class="off" 추가 시 버튼 숨김 -->
+                                                <button class="slide_btn off"><span class="sr_only">슬라이드 버튼</span></button>
+                                                <!-- 대분류 선택됐을 시, class="active" 추가 -->
+                                                <div class="large_ctg">
+                                                    <label class="chk_s">
+                                                        <input type="checkbox">
+                                                        <span class="chk_img" aria-hidden="true"></span>
+                                                        <span class="chk_txt">99% ~</span>
+                                                    </label>
+                                                    <span class="cnt">9,999</span>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <!-- class="off" 추가 시 버튼 숨김 -->
+                                                <button class="slide_btn off"><span class="sr_only">슬라이드 버튼</span></button>
+                                                <div class="large_ctg">
+                                                    <label class="chk_s">
+                                                        <input type="checkbox">
+                                                        <span class="chk_img" aria-hidden="true"></span>
+                                                        <span class="chk_txt">90% ~ 99%</span>
+                                                    </label>
+                                                    <span class="cnt">9,999</span>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <!-- class="off" 추가 시 버튼 숨김 -->
+                                                <button class="slide_btn off"><span class="sr_only">슬라이드 버튼</span></button>
+                                                <!-- 대분류 선택됐을 시, class="active" 추가 -->
+                                                <div class="large_ctg">
+                                                    <label class="chk_s">
+                                                        <input type="checkbox">
+                                                        <span class="chk_img" aria-hidden="true"></span>
+                                                        <span class="chk_txt">80% ~ 89%</span>
+                                                    </label>
+                                                    <span class="cnt">9,999</span>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <!-- class="off" 추가 시 버튼 숨김 -->
+                                                <button class="slide_btn off"><span class="sr_only">슬라이드 버튼</span></button>
+                                                <!-- 대분류 선택됐을 시, class="active" 추가 -->
+                                                <div class="large_ctg">
+                                                    <label class="chk_s">
+                                                        <input type="checkbox">
+                                                        <span class="chk_img" aria-hidden="true"></span>
+                                                        <span class="chk_txt">~80%</span>
+                                                    </label>
+                                                    <span class="cnt">9,999</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><span>흐름 분석 구분</span></a>
+                                    <div class="ctg_area">
+                                        <div class="tree_list">
+                                            <div class="item">
+                                                <!-- class="off" 추가 시 버튼 숨김 -->
+                                                <button class="slide_btn off"><span class="sr_only">슬라이드 버튼</span></button>                                                
+                                                <!-- 대분류 선택됐을 시, class="active" 추가 -->
+                                                <div class="large_ctg">
+                                                    <label class="chk_s">
+                                                        <input type="checkbox">
+                                                        <span class="chk_img" aria-hidden="true"></span>
+                                                        <span class="chk_txt">99% ~</span>
+                                                    </label>
+                                                    <span class="cnt">9,999</span>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <!-- class="off" 추가 시 버튼 숨김 -->
+                                                <button class="slide_btn off"><span class="sr_only">슬라이드 버튼</span></button>    
+                                                <div class="large_ctg">
+                                                    <label class="chk_s">
+                                                        <input type="checkbox">
+                                                        <span class="chk_img" aria-hidden="true"></span>
+                                                        <span class="chk_txt">90% ~ 99%</span>
+                                                    </label>
+                                                    <span class="cnt">9,999</span>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <!-- class="off" 추가 시 버튼 숨김 -->
+                                                <button class="slide_btn off"><span class="sr_only">슬라이드 버튼</span></button>   
+                                                <div class="large_ctg">
+                                                    <label class="chk_s">
+                                                        <input type="checkbox">
+                                                        <span class="chk_img" aria-hidden="true"></span>
+                                                        <span class="chk_txt">80% ~ 89%</span>
+                                                    </label>
+                                                    <span class="cnt">9,999</span>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <!-- class="off" 추가 시 버튼 숨김 -->
+                                                <button class="slide_btn off"><span class="sr_only">슬라이드 버튼</span></button>   
+                                                <div class="large_ctg">
+                                                    <label class="chk_s">
+                                                        <input type="checkbox">
+                                                        <span class="chk_img" aria-hidden="true"></span>
+                                                        <span class="chk_txt">~80%</span>
+                                                    </label>
+                                                    <span class="cnt">9,999</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><span>개인정보 여부</span></a>
+                                    <div class="ctg_area">
+                                        <div class="tree_list">
+                                            <div class="item">
+                                                <!-- class="off" 추가 시 버튼 숨김 -->
+                                                <button class="slide_btn off"><span class="sr_only">슬라이드 버튼</span></button>
+                                                <!-- 대분류 선택됐을 시, class="active" 추가 -->
+                                                <div class="large_ctg">
+                                                    <label class="chk_s">
+                                                        <input type="checkbox">
+                                                        <span class="chk_img" aria-hidden="true"></span>
+                                                        <span class="chk_txt">Y</span>
+                                                    </label>
+                                                    <span class="cnt">9,999</span>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <!-- class="off" 추가 시 버튼 숨김 -->
+                                                <button class="slide_btn off"><span class="sr_only">슬라이드 버튼</span></button>
+                                                <!-- 대분류 선택됐을 시, class="active" 추가 -->
+                                                <div class="large_ctg">
+                                                    <label class="chk_s">
+                                                        <input type="checkbox">
+                                                        <span class="chk_img" aria-hidden="true"></span>
+                                                        <span class="chk_txt">N</span>
+                                                    </label>
+                                                    <span class="cnt">9,999</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><span>데이터 셋 제공 여부</span></a>
+                                    <div class="ctg_area">
+                                        <div class="tree_list">
+                                            <div class="item">
+                                                <!-- class="off" 추가 시 버튼 숨김 -->
+                                                <button class="slide_btn off"><span class="sr_only">슬라이드 버튼</span></button>   
+                                                <!-- 대분류 선택됐을 시, class="active" 추가 -->
+                                                <div class="large_ctg">
+                                                    <label class="chk_s">
+                                                        <input type="checkbox">
+                                                        <span class="chk_img" aria-hidden="true"></span>
+                                                        <span class="chk_txt">Y</span>
+                                                    </label>
+                                                    <span class="cnt">9,999</span>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <!-- class="off" 추가 시 버튼 숨김 -->
+                                                <button class="slide_btn off"><span class="sr_only">슬라이드 버튼</span></button>   
+                                                <!-- 대분류 선택됐을 시, class="active" 추가 -->
+                                                <div class="large_ctg">
+                                                    <label class="chk_s">
+                                                        <input type="checkbox">
+                                                        <span class="chk_img" aria-hidden="true"></span>
+                                                        <span class="chk_txt">N</span>
+                                                    </label>
+                                                    <span class="cnt">9,999</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- 현재 페이지 경로 -->
+        <div class="location_wrap">
+            <a href="javascript:void"><span class="sr_only">home</span></a>
+            <a href="javascript:void">통합검색결과</a>
+        </div> 
+        <div class="contents">
+            <!-- 상단 공통 끝 -->
+            <div class="sub">
+                <!-- 상단검색 -->
+                <div class="search_top_wrap">
+                    <div class="layer_area">
+                        <div class="search">
+                            <input type="text" placeholder="검색어를 입력해주세요." class="layer_target" data-layer="search">
+                            <div class="btns">
+                                <!-- class="on" 추가 시 옵션 활성화 -->
+                                <a href="javascript:void(0)" class="option_btn layer_target" data-layer="filter">
+                                    <span class="sr_only">필터 버튼</span>
+                                </a>
+                                <a href="javascript:void(0)" class="search_btn">
+                                    <img src="../../img/search_black_icon.svg" alt="검색 버튼">
+                                </a>
+                            </div>
+                        </div>
+                        <label class="chk_s">
+                            <input type="checkbox">
+                            <span class="chk_img" aria-hidden="true"></span>
+                            <span class="chk_txt">결과 내 재검색</span>
+                        </label>
+                        <!-- 검색 레이어 내용 class="show" 추가 시 활성화 -->
+                        <!-- 최근 검색어 -->
+                        <div class="layer_box" data-layer="search">
+                            <div class="search_box_layer">
+                                <!-- 최근검색어 -->
+                                <div class="recent_box">
+                                    <p class="title">최근검색어</p>
+                                    <div class="item">
+                                        <a href="javascript:void(0)" class="txt">
+                                            <span>통합데이터시스템</span>
+                                            <span>2024.08.16</span>
+                                        </a>
+                                        <a href="javascript:void(0)" class="delete_btn">
+                                            <img src="../../img/search_delete_icon.svg" alt="최근검색어 삭제 버튼">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="javascript:void(0)" class="txt">
+                                            <span>추석예매현황</span>
+                                            <span>2024.08.16</span>
+                                        </a>
+                                        <a href="javascript:void(0)" class="delete_btn">
+                                            <img src="../../img/search_delete_icon.svg" alt="최근검색어 삭제 버튼">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="javascript:void(0)" class="txt">
+                                            <span>데이터현황</span>
+                                            <span>2024.08.16</span>
+                                        </a>
+                                        <a href="javascript:void(0)" class="delete_btn">
+                                            <img src="../../img/search_delete_icon.svg" alt="최근검색어 삭제 버튼">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="javascript:void(0)" class="txt">
+                                            <span>메타데이터현황</span>
+                                            <span>2024.08.16</span>
+                                        </a>
+                                        <a href="javascript:void(0)" class="delete_btn">
+                                            <img src="../../img/search_delete_icon.svg" alt="최근검색어 삭제 버튼">
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="javascript:void(0)" class="txt">
+                                            <span>한국철도 인기데이터 통계포털</span>
+                                            <span>2024.08.16</span>
+                                        </a>
+                                        <a href="javascript:void(0)" class="delete_btn">
+                                            <img src="../../img/search_delete_icon.svg" alt="최근검색어 삭제 버튼">
+                                        </a>
+                                    </div>
+                                    <!-- class="on" 추가 시 검색 옵션 내용 보임 -->
+                                    <a href="javascript:void(0)" class="all_delete_btn">전체삭제</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 상세검색 -->
+                        <div class="layer_box" data-layer="filter">
+                            <div class="search_box_layer">
+                                <div class="detail_search">
+                                    <p class="title">상세검색</p>
+                                    <div class="search_option">
+                                        <p>검색옵션</p>
+                                        <div class="radio_btn">
+                                            <label class="radio_s">
+                                                <input type="radio" name="radio">
+                                                <span class="radio_txt">or검색</span>
+                                            </label>
+                                            <label class="radio_s">
+                                                <input type="radio" name="radio">
+                                                <span class="radio_txt">and검색</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 탭 -->
+                <div class="search_tab_wrap">
+                    <!-- class="on" 추가 시 활성화 -->
+                    <a href="javascript:void(0)" class="model on">모델</a>
+                    <a href="javascript:void(0)" class="dic">표준사전</a>
+                </div>
+                <!-- 탭내용 -->
+                <div class="search_content_wrap">
+                    <!-- 모델 (리스트) | class="on" 추가 시 내용 보임  -->
+                    <div class="search_tab_con model on">
+                        <div class="search_util_wrap">
+                            <div class="title_area">
+                                <p class="title">모델</p>
+                                <div class="cnt">
+                                    <p>검색결과 <span>9,999</span></p>
+                                    <span class="txt">건</span>
+                                </div>
+                                <div class="keyword">
+                                    <p>검색키워드 :</p>
+                                    <ul>
+                                        <li>여객</li>
+                                        <li>운송</li>
+                                        <li>시설</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sort_area">
+                                <div class="list">
+                                    <a  href="java script:void(0)" class="on">유사도</a>
+                                    <a href="javascript:void(0)">다운로드순</a>
+                                    <a href="javascript:void(0)">조회순</a>
+                                    <a href="javascript:void(0)">좋아요순</a>
+                                    <a href="javascript:void(0)">최신순</a>
+                                </div>
+                                <div class="toggle">
+                                    <a href="javascript:void(0)" class="card">Card</a>
+                                    <a href="javascript:void(0)" class="grid on">Grid</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid_wrap">
+                            <div id="model_list" class="ag-theme-quartz lg_theme"  style="height: 560px;"></div>
+                            <div class="page">
+                                <!-- class="on" 추가 시 페이지 활성화 -->
+                                <a href="javascript:void(0)" class="first"></a>
+                                <a href="javascript:void(0)" class="prev"></a>
+                                <a href="javascript:void(0)" class="on">1</a>
+                                <a href="javascript:void(0)" class="">2</a>
+                                <a href="javascript:void(0)" class="">3</a>
+                                <a href="javascript:void(0)" class="">4</a>
+                                <a href="javascript:void(0)" class="">5</a>
+                                <a href="javascript:void(0)" class="next"></a>
+                                <a href="javascript:void(0)" class="last"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 표준사전 (리스트) | class="on" 추가 시 내용 보임 -->
+                    <div class="search_tab_con dic">
+                        <div class="search_util_wrap">
+                            <div class="title_area">
+                                <p class="title">표준사전</p>
+                                <div class="cnt">
+                                    <p>검색결과 <span>9,999</span></p>
+                                    <span class="txt">건</span>
+                                </div>
+                                <div class="keyword">
+                                    <p>검색키워드 :</p>
+                                    <ul>
+                                        <li>여객</li>
+                                        <li>운송</li>
+                                        <li>시설</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sort_area">
+                                <div class="list">
+                                    <a  href="java script:void(0)" class="on">유사도</a>
+                                    <a href="javascript:void(0)">다운로드순</a>
+                                    <a href="javascript:void(0)">조회순</a>
+                                    <a href="javascript:void(0)">좋아요순</a>
+                                    <a href="javascript:void(0)">최신순</a>
+                                </div>
+                                <div class="toggle">
+                                    <a href="javascript:void(0)" class="card">Card</a>
+                                    <a href="javascript:void(0)" class="grid on">Grid</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid_wrap">
+                            <div id="dic_list" class="ag-theme-quartz lg_theme"  style="height: 560px;"></div>
+                            <div class="page">
+                                <!-- class="on" 추가 시 페이지 활성화 -->
+                                <a href="javascript:void(0)" class="first"></a>
+                                <a href="javascript:void(0)" class="prev"></a>
+                                <a href="javascript:void(0)" class="on">1</a>
+                                <a href="javascript:void(0)" class="">2</a>
+                                <a href="javascript:void(0)" class="">3</a>
+                                <a href="javascript:void(0)" class="">4</a>
+                                <a href="javascript:void(0)" class="">5</a>
+                                <a href="javascript:void(0)" class="next"></a>
+                                <a href="javascript:void(0)" class="last"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 하단 공통 시작 -->
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            // 대분류 선택 시 슬라이드
+            $('aside.search_menu nav .gnb > li > a').click(function(){
+                $(this).siblings().stop().slideToggle('fast');
+                $(this).parent('li').toggleClass('on');
+            });
+
+            // 메타데이터구분 트리구조 슬라이드 버튼 클릭 시 내용 보임/숨김
+            $('aside.search_menu nav .tree_list .slide_btn').click(function(){
+                $(this).toggleClass('on');
+                $(this).siblings('.sm_ctg').stop().slideToggle('fast');
+            });
+
+            // 슬라이드 버튼에 따른 내용 표시/숨김
+            let slideToggleBtn = $('aside.search_menu nav .tree_list .slide_btn');
+
+            slideToggleBtn.each((idx, el) => {
+                let $el = $(el);
+                $el.parents('.ctg_area').addClass('active'); // 대분류 내용 표시
+                if ($el.hasClass('on')) { // 슬라이드 버튼 활성화 시
+                    $el.siblings('.sm_ctg').addClass('active'); // 소분류 내용 표시
+                } else {
+                    $el.siblings('.sm_ctg').removeClass('active');
+                }
+            });
+            
+            // 모델 표준사전 탭
+            $('.search_tab_wrap a').click(function(){
+                let idx = $(this).index();
+                $(this).siblings().removeClass('on');
+                $(this).addClass('on');
+                $('.search_tab_con').removeClass('on');
+                $('.search_tab_con').eq(idx).addClass('on');
+            });
+
+            // 순차 버튼 클릭 시 활성화
+            $('.search_util_wrap .sort_area .list a').click(function(){
+                $('.search_util_wrap .sort_area .list a').removeClass('on');
+                $(this).addClass('on');
+            });
+        });
+    </script>
+    <!-- 그리드 -->
+    <script src="../../js/agGrid/ag-grid-community.js"></script>
+    <script src="../../js/agGrid/ag-grid-community.noStyle.js"></script>
+    <script src="../../js/search/searchResult_grid.js"></script>
+ </body>
+</html>
+<!-- 하단 공통 끝 -->

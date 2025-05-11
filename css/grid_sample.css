@@ -1,0 +1,404 @@
+.ag-theme-quartz,
+.ag-theme-quartz-dark,
+.ag-theme-quartz-auto-dark {
+    --ag-card-shadow: transparent !important;
+    --ag-cell-horizontal-border: solid #eeeeee !important;
+    --ag-header-column-resize-handle-height: 100% !important;
+    --ag-header-column-resize-handle-color: #eeeeee !important;
+    --ag-header-column-resize-handle-width: 1px !important;
+    --ag-wrapper-border-radius: 4px !important;
+    --ag-icon-size:18px !important;
+    --ag-input-focus-box-shadow: transparent !important;
+    --ag-font-family: "Pretendard" !important;
+    --ag-checkbox-checked-color: #3957D3 !important;
+    --ag-checkbox-border-radius: 4px !important;
+    --ag-border-color: #D3D3D3 !important;
+    --ag-header-background-color: #F5F6F8 !important;
+    --ag-data-color: #222222 !important;
+    --ag-header-foreground-color: #222222 !important;
+    --ag-selected-row-background-color: #E9F0FA !important;
+    --ag-row-hover-color: #F3F7FD !important;
+    /* --ag-font-size: 13px !important; */
+    --ag-row-height: 34px !important;
+    --ag-header-height: 36px !important;
+    --ag-border-color: #EEEEEE !important;
+    --ag-wrapper-border-radius: 0px !important;
+    --ag-checkbox-unchecked-color: #D3D3D3 !important;
+    /* --ag-icon-font-code-checkbox-checked: ../img/default_checkbox_check_icon.svg !important; */
+}
+
+.ag-theme-quartz.lg_theme{
+    --ag-row-height: 40px !important;
+    --ag-header-height: 40px !important;
+}
+.ag-theme-quartz.lg_theme .ag-body{
+    font-size: 14px;
+    font-weight: 300;
+}
+.ag-theme-quartz.lg_theme .ag-header-cell, 
+.ag-theme-quartz.lg_theme .ag-header-group-cell{
+    font-size: 15px;
+}
+.ag-root-wrapper{
+    border: none !important;
+    border-top: 1px solid #DEDEDE !important;
+}
+
+.ag-checkbox-input-wrapper.ag-indeterminate::after{
+    /* content: none !important; */
+}
+
+[class*=ag-theme-] {
+    font-size: 13px !important;
+}
+/* 그리드 헤더 */
+.ag-header-row{
+    font-weight: 400 !important;
+    font-size: 14px !important;
+}
+
+.ag-row-hover.ag-row-selected::before {
+    background-color: var(--ag-row-hover-color);
+    background-image: linear-gradient(var(--ag-selected-row-background-color), var(--ag-selected-row-background-color));
+}
+
+/* 편집가능한 헤더셀 표시 */
+/*
+.ag-header-cell.editable{
+    width: 12px;
+    height: 12px;
+}
+*/
+.ag-header-cell.editable .ag-header-cell-text{
+    padding-left: 20px;
+    background: url(../img/grid_edit_icon.svg) left/auto no-repeat;
+}
+/* 필수 입력 헤더 표시 */
+.ag-header-cell {
+    &.required {
+        .ag-header-cell-text {
+            &:after {
+                content: '*';
+                color: #FF0000;
+                display: inline-block;
+            }
+        }
+    }
+}
+.ag-header-cell-label{
+    justify-content: center;
+}
+.ag-cell span{
+    line-height: min(var(--ag-internal-calculated-line-height), var(--ag-internal-padded-row-height));
+}
+/* 그리드 페이지 */
+.ag-paging-panel{
+    border-top-color: transparent !important;
+    justify-content: center !important;
+}
+.ag-cell a.ppt{
+    background: url(../img/ppt.svg) center/cover no-repeat;
+    width: 18px;
+    height: 18px;
+    margin-right: 3px;
+}
+.ag-cell a.clip{
+    background: url(../img/clip.svg) center/cover no-repeat;
+    width: 14px;
+    height: 16px;
+    margin-top: 10px;
+}
+/* 그리드 헤더 필수값 */
+.ag-header-cell .required{
+    color: #FF0000;
+}
+/* 그리드 헤더 html */
+.ag-header-cell.editable .h_cell{
+    position: relative;
+    padding-left: 20px;
+}
+.ag-header-cell.editable .h_cell:before{
+    content: '';
+    position: absolute;
+    padding-left: 20px;
+    background: url(../img/grid_edit_icon.svg) left/contain no-repeat;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 13px;
+}
+/* 그리드 헤더 체크박스 미선택 커스텀 */
+.ag-checkbox-input-wrapper.ag-indeterminate::after{
+    border: 1px solid #D3D3D3 !important;
+    color: transparent !important;
+    border-radius: 4px;
+    width: 18px;
+    height: 18px;
+}
+/* 그리드 체크박스 비활성화 스타일 변경 */
+.ag-checkbox-input-wrapper.ag-disabled{
+    opacity: 1 !important;
+    background-color: #DFDFDF;
+}
+.ag-checkbox-input-wrapper.ag-disabled::after{
+    color: #DFDFDF !important;
+}
+/* 그리드 행 */
+.ag-row{
+    font-weight: 400;
+}
+/* 그리드 셀렉트박스 아이콘 */
+.ag-select .ag-picker-field-icon{
+    align-items: baseline !important;
+}
+/* 버튼 여러개 있을 시 */
+.button_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 8px;
+}
+.button_wrapper button:not(.mark_btn){
+    border-radius: 4px; 
+    font-size: 13px;
+    padding: 0 8px;
+    height: 25px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 51px;
+    transition: 0.1s;
+}
+.button_wrapper a:not(.mark_btn){
+    border-radius: 4px; 
+    font-size: 13px;
+    padding: 0 8px;
+    height: 25px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 51px;
+    transition: 0.1s;
+}
+/* .button_wrapper button:not(.mark_btn):hover{
+    border-color: #727272;
+    background-color: white;
+} */
+/* .button_wrapper a:not(.mark_btn):hover{
+    border-radius: 4px; 
+    font-size: 13px;
+    padding: 0 8px;
+    height: 25px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 51px;
+    transition: 0.1s;
+} */
+.button_wrapper .mark_btn{
+    background: url(../img/search_list_star_gray_icon.svg) center/cover no-repeat;
+    width: 16px;
+    height: 15px;
+    padding: 0;
+}
+.button_wrapper .mark_btn.on{
+    background-image: url(../img/search_list_star_yellow_icon.svg)
+}
+.button_wrapper .gray_line{
+    border: 1px solid #D7D7D7;
+    background-color: white;
+}
+.button_wrapper .gray_line:hover{
+    border-color: #444444;
+}
+.button_wrapper .pending{
+    border: 1px solid #C9E4F9;
+    background-color: #ECF5FB;
+    color: #0069BA;
+}
+.button_wrapper .complete{
+    border: 1px solid #DBE2EC;
+    background-color: #EFF1F4;
+    color: #20354E;
+}
+/* 헤더 그룹 스타일 추가 */
+.header_group_center .ag-header-cell-comp-wrapper{
+    justify-content: center;
+}
+/* 헤더 여러 개 일 때 */
+.multi_header.ag-theme-quartz{
+    --ag-header-height: 30px !important;
+}
+/* 그리드 셀에 호버 시 제품 이동 버튼 보이게 */
+.ag-ltr .ag-cell:hover a.prd{
+    display: block;
+    opacity: 1;
+}
+/* 그리드 셀 리사이즈 높이 수정 */
+.ag-ltr .ag-header-viewport .ag-header-cell-resize::after{
+    height: 100% !important;
+    top: 0 !important;
+}
+/* 그리드 셀 셀렉트 박스 아이콘 위치 수정 */
+.ag-cell .ag-icon {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateY(-2px);
+}
+/* 그리드 셀 체크박스 중간 정렬 */
+.ag-checkbox-cell{
+    justify-content: center;
+}
+/* 그리드 마지막 셀 리사이즈 및 보더 숨김 */
+.ag-header-cell-resize{
+    z-index: 1 !important;
+}
+.ag-header-cell:last-of-type .ag-header-cell-resize{
+    display: none;
+}
+.ag-row .ag-cell.ag-column-last {
+/*    border-right: none !important;*/
+    border-right-color: transparent;
+}
+/* 그리드 헤더 체크박스 */
+.ag_header_check{
+    display: flex;
+    align-items: center;
+}
+.ag_header_check label.chk_s{
+    margin-right: 4px;
+}
+.ag-checkbox-input-wrapper.ag-checked::after{
+    font-weight: 900;
+}
+/* 메뉴별 역할관리 - 그리드 메뉴명 셀 들여쓰기 */
+.depth_01 .menu_nm{
+    padding-left: 25px !important;
+}
+.depth_02 .menu_nm{
+    padding-left: 35px !important;
+}
+.depth_03 .menu_nm{
+    padding-left: 45px !important;
+}
+/* 그리드 파일 다운로드 */
+.download_link_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+/* 그리드 파일 다운로드 - 가능 */
+.download_link_wrapper .enabled{
+    border-bottom: 1px solid black;
+}
+/* 그리드 파일 다운로드 - 불가능 */
+.download_link_wrapper .disabled{
+    cursor: default;
+}
+/* 결재선 정보 등록/수정 - 결재선 삭제 버튼 */
+.approval_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.approval_btn a{
+    width: 26px;
+    height: 26px;
+    min-width: 26px;
+    min-height: 26px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.approval_btn a::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: url(../img/wastebasket_gray_icon.svg) center/cover no-repeat;
+    width: 12px;
+    height: 14px;
+}
+.approval_btn a:hover{
+    background-color: #D6E3F5;
+}
+.approval_btn a:hover::before{
+    background-image: url(../img/wastebasket_blue_icon.svg);
+}
+/* 알람 이력 관리 이동 버튼 */
+.link_btn{
+    text-decoration: underline;
+    text-underline-position: under;
+}
+/* 원시데이터 요청 팝업 - 컬럼 그리드 */
+/* 헤더 숨김 */
+.rawdata_popup .raw_column_grid .ag-header{
+    display: none;
+}
+.rawdata_popup .raw_column_grid .hover_column{
+    background-color: #F3F7FD; /* 원하는 색상으로 변경 */
+}
+.rawdata_popup .raw_column_grid .row_title{
+    background-color: #F5F6F8;
+}
+.rawdata_popup .raw_column_grid .ag-center-cols-container .ag-row:first-of-type{
+    background-color: #F5F6F8;
+    min-width: auto;
+}
+.rawdata_popup .raw_column_grid .row_btn_wrap{
+    position: relative;
+    padding-top: 10px;
+}
+.rawdata_popup .raw_column_grid .row_btn_wrap button{
+    position: absolute;
+}
+.rawdata_popup .raw_column_grid .row_btn_wrap .delete_row_btn{
+    right: 0;
+    background: url(../img/rawdata_popup_minus_icon.svg) center/cover no-repeat;
+    width: 18px;
+    height: 18px;
+}
+.rawdata_popup .raw_column_grid .grid_select{
+    width: 100%;
+    height: 26px;
+    margin-top: 2.5px;
+}
+.rawdata_popup .raw_column_grid .grid_select option{
+    font-size: 13px;
+}
+/* 배치 관리 및 통합 모니터링 - 로그, 실행 버튼 */
+.button_wrapper .line{
+    text-decoration: underline;
+    text-underline-position: under;
+}
+/* 셀 병합 시 배경 */
+.cell_span{
+    background-color: white;
+    position: relative;
+}
+.cell_span::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #EEEEEE;
+}
+/* 공지사항 제목 - 말줄임 */
+.grid_wrap.notice .ag-cell.cell_text_overflow > span{
+    display: flex;
+    width: 100%;
+    gap: 8px;
+} 
+/* 정보시스템 사용 요청 > 결재 그리드 - 최소 높이 */
+.system_request_pop .ag-center-cols-viewport {
+    min-height: 34px !important;
+}

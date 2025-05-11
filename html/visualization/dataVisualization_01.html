@@ -1,0 +1,1089 @@
+<!-- 상단 공통 시작 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타이틀</title>
+    <link rel="stylesheet" href="../../css/font.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../../css/grid_sample.css">
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+<body>
+    <!-- class="active" 추가 시 서브메뉴 보임 -->
+    <header>
+        <div class="con">
+            <div class="gnb_wrap">
+                <div class="h_left">
+                    <button class="all_menu open_popup" data-popup="site_map_popup"><span class="sr_only">전체메뉴보기</span></button>
+                    <h1>LOGO</h1>
+                </div>
+                <nav>
+                    <ul class="gnb">
+                        <!-- class="on" 추가 시 페이지 활성화 표시 -->
+                        <li class="on">
+                            <a href="javascript:void(0)"><span>MENU 1</span></a>
+                             <div class="lnb_wrap">
+                                <ul class="lnb">
+                                    <li><a href="javascript:void(0)">MENU</a></li>
+                                    <li><a href="javascript:void(0)">MENU</a></li>
+                                    <li><a href="javascript:void(0)">MENU</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><span>MENU 2</span></a>
+                            <div class="lnb_wrap">
+                                <ul class="lnb">
+                                    <li><a href="javascript:void(0)">MENU</a></li>
+                                    <li><a href="javascript:void(0)">MENU</a></li>
+                                </ul>
+                            </div>
+                        </li> 
+                        <li>
+                            <a href="javascript:void(0)"><span>MENU 3</span></a>
+                            <div class="lnb_wrap">
+                                <ul class="lnb">
+                                    <li><a href="javascript:void(0)">MENU</a></li>
+                                    <li><a href="javascript:void(0)">MENU</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><span>MENU 4</span></a>
+                            <div class="lnb_wrap">  
+                                <ul class="lnb">
+                                    <li><a href="javascript:void(0)">MENU</a></li>
+                                    <li><a href="javascript:void(0)">MENU</a></li>
+                                    <li><a href="javascript:void(0)">MENU</a></li>
+                                    <li><a href="javascript:void(0)">MENU</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><span>MENU 5</span></a>
+                            <div class="lnb_wrap">
+                                <ul class="lnb">
+                                    <li><a href="javascript:void(0)">MENU</a></li>
+                                    <li><a href="javascript:void(0)">MENU</a></li>
+                                    <li><a href="javascript:void(0)">MENU</a></li>
+                                    <li><a href="javascript:void(0)">MENU</a></li>
+                                    <li><a href="javascript:void(0)">MENU</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="h_right">
+                    <div class="header_search">
+                        <button class="open_popup" data-popup="heaader_search_popup"><span class="sr_only">검색</span></button>
+                    </div>
+                    <div class="header_alarm">
+                        <span class="cnt">27</span>
+                        <button class="txt">알림</button>
+                    </div>
+                    <div class="header_login">
+                        <span class="txt">최희원님</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="layer_bk"></div>
+    <!-- 전체메뉴 팝업 -->
+    <div class="layer_popup" id="site_map_popup">
+        <div class="popup_box">
+            <div class="pop_title">
+                <p class="site_map_title">전체메뉴</p>
+            </div>
+            <div class="pop_con" tabindex="0">
+                <div class="site_map">
+                    <div class="menu_item">
+                        <a href="javascript:void(0)">menu</a>
+                        <ul class="sub_menu_item">
+                            <li><a href="javascript:void(0)">menu</a></li>
+                            <li><a href="javascript:void(0)">menu</a></li>
+                            <li><a href="javascript:void(0)">menu</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_item">
+                        <a href="javascript:void(0)">menu</a>
+                        <ul class="sub_menu_item">
+                            <li><a href="javascript:void(0)">menu</a></li>
+                            <li><a href="javascript:void(0)">menu</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_item">
+                        <a href="javascript:void(0)">menu</a>
+                        <ul class="sub_menu_item">
+                            <li><a href="javascript:void(0)">menu</a></li>
+                            <li><a href="javascript:void(0)">menu</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_item">
+                        <a href="javascript:void(0)">menu</a>
+                        <ul class="sub_menu_item">
+                            <li><a href="javascript:void(0)">menu</a></li>
+                            <li><a href="javascript:void(0)">menu</a></li>
+                            <li><a href="javascript:void(0)">menu</a></li>
+                            <li><a href="javascript:void(0)">menu</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_item mypage">
+                        <a href="javascript:void(0)">menu</a>
+                        <div class="link_area">
+                            <a href="javascript:void(0)" class="task">menu</a>
+                            <a href="javascript:void(0)">menu</a>
+                            <a href="javascript:void(0)">menu</a>
+                            <a href="javascript:void(0)">menu</a>
+                            <a href="javascript:void(0)">menu</a>
+                        </div>
+                        <div class="sub_menu_area">
+                            <div class="item">
+                                <a href="javascript:void(0)" class="third_level">menu</a>
+                                <ul class="sub_menu_item">
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                </ul>
+                            </div>
+                            <div class="item">
+                                <a href="javascript:void(0)" class="third_level">menu</a>
+                                <ul class="sub_menu_item">
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                </ul>
+                            </div>
+                            <div class="item">
+                                <a href="javascript:void(0)" class="third_level">menu</a>
+                                <ul class="sub_menu_item">
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                </ul>
+                            </div>
+                            <div class="item">
+                                <a href="javascript:void(0)" class="third_level">menu</a>
+                                <ul class="sub_menu_item">
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                </ul> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn pop_close">
+                <span class="sr_only">팝업닫기버튼</span>
+            </button>
+        </div>
+    </div>
+    <!-- 헤더 검색창 팝업 -->
+    <div class="layer_popup" id="heaader_search_popup">
+        <div class="popup_box">
+            <button class="btn pop_close">
+                <span class="sr_only">팝업닫기버튼</span>
+            </button>
+            <div class="pop_con">
+                <div class="search_pop_con">
+                    <div class="search_pop_int">
+                        <input type="text" placeholder="검색어를 입력해 주세요.">
+                        <button class="pop_search_btn">
+                            <span class="sr_only">검색버튼</span>
+                        </button>
+                    </div>
+                    <div class="search_pop_option">
+                        <p>검색옵션</p>
+                        <div class="radio_btn">
+                            <label class="radio_s">
+                                <input type="radio" name="radio">
+                                <span class="radio_mark" aria-hidden="true"></span>
+                                <span class="radio_txt">or검색</span>
+                            </label>
+                            <label class="radio_s">
+                                <input type="radio" name="radio">
+                                <span class="radio_mark" aria-hidden="true"></span>
+                                <span class="radio_txt">and검색</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pop_btn">
+                <button class="secondary pop_close">닫기</button>
+            </div>
+        </div>
+    </div>
+    <!-- 알람 레이어 팝업 -->
+    <div class="alarm_layer_popup">
+        <div class="popup_box">
+            <div class="title">알림</div>
+            <div class="tab">
+                <!-- class="active" 추가 시 활성화 -->
+                <button class="active">샘플<span>999</span></button>
+                <button>샘플<span>999</span></button>
+                <button>샘플<span>999</span></button> 
+            </div>
+            <div class="list">
+                <div class="item">
+                    <div class="ctg">
+                        <!-- class="blue"결재요청 | class="black" 결재완료 -->
+                        <span class="blue">더미데이터</span>
+                        <span>더미데이터</span>
+                    </div>
+                    <div class="con_title">알림데이터 설명입니다.</div>
+                    <div class="etc"> 
+                        <p>2024-08-18 12:12:12</p>
+                        <div class="btn">
+                            <a href="javascript:void(0)">읽음</a>
+                            <a href="javascript:void(0)" class="link">이동</a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ctg">
+                        <!-- class="blue"결재요청 | class="black" 결재완료 -->
+                        <span class="blue">더미데이터</span>
+                        <span>더미데이터</span>
+                    </div>
+                    <div class="con_title">알림데이터 설명입니다.</div>
+                    <div class="etc"> 
+                        <p>2024-08-18 12:12:12</p>
+                        <div class="btn">
+                            <a href="javascript:void(0)">읽음</a>
+                            <a href="javascript:void(0)" class="link">이동</a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ctg">
+                        <!-- class="blue"결재요청 | class="black" 결재완료 -->
+                        <span class="blue">더미데이터</span>
+                        <span>더미데이터</span>
+                    </div>
+                    <div class="con_title">알림데이터 설명입니다.</div>
+                    <div class="etc"> 
+                        <p>2024-08-18 12:12:12</p>
+                        <div class="btn">
+                            <a href="javascript:void(0)">읽음</a>
+                            <a href="javascript:void(0)" class="link">이동</a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ctg">
+                        <!-- class="blue"결재요청 | class="black" 결재완료 -->
+                        <span class="blue">더미데이터</span>
+                        <span>더미데이터</span>
+                    </div>
+                    <div class="con_title">알림데이터 설명입니다.</div>
+                    <div class="etc"> 
+                        <p>2024-08-18 12:12:12</p>
+                        <div class="btn">
+                            <a href="javascript:void(0)">읽음</a>
+                            <a href="javascript:void(0)" class="link">이동</a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ctg">
+                        <!-- class="blue"결재요청 | class="black" 결재완료 -->
+                        <span class="blue">더미데이터</span>
+                        <span>더미데이터</span>
+                    </div>
+                    <div class="con_title">알림데이터 설명입니다.</div>
+                    <div class="etc"> 
+                        <p>2024-08-18 12:12:12</p>
+                        <div class="btn">
+                            <a href="javascript:void(0)">읽음</a>
+                            <a href="javascript:void(0)" class="link">이동</a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ctg">
+                        <!-- class="blue"결재요청 | class="black" 결재완료 -->
+                        <span class="blue">더미데이터</span>
+                        <span>더미데이터</span>
+                    </div>
+                    <div class="con_title">알림데이터 설명입니다.</div>
+                    <div class="etc"> 
+                        <p>2024-08-18 12:12:12</p>
+                        <div class="btn">
+                            <a href="javascript:void(0)">읽음</a>
+                            <a href="javascript:void(0)" class="link">이동</a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ctg">
+                        <!-- class="blue"결재요청 | class="black" 결재완료 -->
+                        <span class="blue">더미데이터</span>
+                        <span>더미데이터</span>
+                    </div>
+                    <div class="con_title">알림데이터 설명입니다.</div>
+                    <div class="etc"> 
+                        <p>2024-08-18 12:12:12</p>
+                        <div class="btn">
+                            <a href="javascript:void(0)">읽음</a>
+                            <a href="javascript:void(0)" class="link">이동</a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ctg">
+                        <!-- class="blue"결재요청 | class="black" 결재완료 -->
+                        <span class="blue">더미데이터</span>
+                        <span>더미데이터</span>
+                    </div>
+                    <div class="con_title">알림데이터 설명입니다.</div>
+                    <div class="etc"> 
+                        <p>2024-08-18 12:12:12</p>
+                        <div class="btn">
+                            <a href="javascript:void(0)">읽음</a>
+                            <a href="javascript:void(0)" class="link">이동</a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ctg">
+                        <!-- class="blue"결재요청 | class="black" 결재완료 -->
+                        <span class="blue">더미데이터</span>
+                        <span>더미데이터</span>
+                    </div>
+                    <div class="con_title">알림데이터 설명입니다.</div>
+                    <div class="etc"> 
+                        <p>2024-08-18 12:12:12</p>
+                        <div class="btn">
+                            <a href="javascript:void(0)">읽음</a>
+                            <a href="javascript:void(0)" class="link">이동</a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <button class="alarm_close"><span class="sr_only">알림팝업닫기</span></button>
+        </div>
+    </div>
+    <div class="wrap">
+        <!-- 왼쪽 리스트 -->
+        <aside>
+            <div class="aside_con">
+                <!-- 메뉴 -->
+                <div class="menu">
+                    <span class="all_menu_txt">ALL MENU</span>
+                    <button class="aside_hide_btn">
+                        <span class="sr_only">메뉴 토글 버튼</span>
+                    </button>
+                    <nav>
+                        <ul class="gnb"> 
+                            <!-- class="on" 추가 시 페이지 활성화 표시 -->
+                            <li class="on" id="serviceIntroduction">
+                                <a href="javascript:void(0)"><span>MENU 1</span></a>
+                                 <div class="lnb_wrap">
+                                    <ul class="lnb">
+                                        <li><a href="javascript:void(0)">MENU</a></li>
+                                        <li><a href="javascript:void(0)">MENU</a></li>
+                                        <li><a href="javascript:void(0)">MENU</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li id="dataStatus">
+                                <a href="javascript:void(0)"><span>MENU 2</span></a>
+                                <div class="lnb_wrap">
+                                    <ul class="lnb">
+                                        <li><a href="javascript:void(0)">MENU</a></li>
+                                        <li><a href="javascript:void(0)">MENU</a></li>
+                                    </ul>
+                                </div>
+                            </li> 
+                            <li id="dataVisualization">
+                                <a href="javascript:void(0)"><span>MENU 3</span></a>
+                                <div class="lnb_wrap">
+                                    <ul class="lnb">
+                                        <li><a href="javascript:void(0)">MENU</a></li>
+                                        <li><a href="javascript:void(0)">MENU</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li id="portalCommunity">
+                                <a href="javascript:void(0)"><span>MENU 4</span></a>
+                                <div class="lnb_wrap">  
+                                    <ul class="lnb">
+                                        <li><a href="javascript:void(0)">MENU</a></li>
+                                        <li><a href="javascript:void(0)">MENU</a></li>
+                                        <li><a href="javascript:void(0)">MENU</a></li>
+                                        <li><a href="javascript:void(0)">MENU</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li id="myPage">
+                                <a href="javascript:void(0)"><span>MENU 5</span></a>
+                                <div class="lnb_wrap">
+                                    <ul class="lnb">
+                                        <li><a href="javascript:void(0)">MENU</a></li>
+                                        <li><a href="javascript:void(0)">MENU</a></li>
+                                        <li><a href="javascript:void(0)">MENU</a></li>
+                                        <li><a href="javascript:void(0)">MENU</a></li>
+                                        <li><a href="javascript:void(0)">MENU</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- 상세검색 -->
+            </div>
+        </aside>
+        <!-- 현재 페이지 경로 -->
+        <div class="location_wrap">
+            <a href="javascript:void"><span class="sr_only">home</span></a>
+            <a href="javascript:void">location</a>
+            <a href="javascript:void">location</a>
+        </div> 
+        <div class="contents">
+            <!-- 상단 공통 끝 -->
+            <div class="sub">
+                <div class="visual_wrap">
+                    <div class="sub_title_wrap">
+                        <h2>TITLE</h2>
+                    </div> 
+                    <div class="cnt_item">
+                        <div class="item model">
+                            <p class="con_title">COUNT</p>
+                            <div class="cnt">
+                                <span class="mont">9,999,999</span>
+                                <span class="txt">개</span>
+                            </div>
+                        </div>
+                        <div class="item dic">
+                            <p class="con_title">COUNT</p>
+                            <div class="cnt"> 
+                                <span class="mont">9,999,999</span>
+                                <span class="txt">개</span>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="data_status_wrap">
+                        <p class="section_title">SUB TITLE</p>                        
+                        <div class="chart_item">
+                            <div class="item">
+                                <div class="title_tab_area">
+                                    <p class="chart_title pie">CONTENT TITLE</p>
+                                    <p class="txt">(개수 별)</p>
+                                </div>
+                                <div class="chart_area">
+                                    <!-- 차트 들어오는 공간 -->
+                                    <div class="chart" id="field-chart"></div>
+                                </div>
+                            </div>
+                            <div class="item"> 
+                                <div class="title_tab_area">
+                                    <p class="chart_title pie">CONTENT TITLE</p>
+                                    <p class="txt">(개수 별)</p>
+                                </div>
+                                <div class="chart_area">
+                                    <!-- 차트 들어오는 공간 -->
+                                    <div class="chart" id="dep-chart"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="db_status_wrap">
+                        <p class="section_title">SUB TITLE</p>                        
+                        <div class="chart_item">
+                            <div class="item">
+                                <div class="title_tab_area">
+                                    <p class="chart_title bar">CONTENT TITLE</p>
+                                    <div class="tab">
+                                        <!-- class="on" 추가 시 활성화 -->
+                                        <a href="javascript:void(0)" class="on">데이터 별</a>
+                                        <a href="javascript:void(0)">텍스트 별</a>
+                                    </div> 
+                                </div>
+                                <div class="chart_area">
+                                    <!-- 차트 들어오는 공간 -->
+                                    <div class="chart" id="db-cnt-chart"></div>
+                                </div> 
+                            </div>
+                            <div class="item">
+                                <div class="title_tab_area">
+                                    <p class="chart_title line">CONTENT TITLE</p>
+                                    <div class="tab">
+                                        <!-- class="on" 추가 시 활성화 -->
+                                        <a href="javascript:void(0)" class="on">데이터 별</a>
+                                        <a href="javascript:void(0)">텍스트 별</a>
+                                    </div>
+                                </div>
+                                <div class="chart_area">
+                                    <!-- 차트 들어오는 공간 -->
+                                    <div class="chart" id="db-progress-chart"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <!-- 하단 공통 시작 -->
+        </div>
+    </div>
+    <!-- chart -->
+    <script src="../../js/hightchart/highcharts.js"></script>
+    <script src="../../js/hightchart/exporting.js"></script>
+    <script src="../../js/hightchart/accessibility.js"></script>
+    <!-- 첫번째 원형 차트 -->
+    <script type="text/javascript">
+        Highcharts.setOptions({
+            colors: ['#3748EA','#9271F0','#33CEEF','#E1E0FE','#010031','#292889'],
+        });
+        Highcharts.chart('field-chart', {
+            credits: {
+                enabled: false // 크레딧(로고) 표시 비활성화
+            },
+            exporting: {
+                enabled: false // 이미지 다운로드 버튼 비활성화
+            },
+            chart: {
+                type: 'pie',
+                custom: {},
+                height: 233,
+                width: 480,
+            },
+            accessibility: {
+                point: {
+                    valueSuffix: '%'
+                }
+            },
+            title: {
+                text: null
+            },
+            tooltip: {
+                // headerFormat: "<span style=\"font-size: 12px; padding: 0 5px;\">{point.key}</span><br/>",
+                // pointFormat: '<b style=\"font-size: 16px;\">{point.percentage:.0f}<span style=\"font-size: 10px;\">%<span></b>',                
+                backgroundColor: '#1E1E1E',
+                style: {
+                    color: '#FFFFFF',         
+                    fontFamily: 'Pretendard', 
+                    textAlign: 'right'
+                },
+                shadow: true,                
+                borderRadius: 5,            
+                borderWidth: 1,              
+                borderColor: '#000000',      
+                useHTML: true,               // HTML 사용하여 개행 적용
+                formatter: function () {
+                    // 개행 추가를 위해 HTML 태그 사용
+                    return `<p class="tooltip_custom">
+                        <span>${this.point.name}</span>
+                        <span class="mont">
+                            <span class="mark" style="border-color:${this.point.color}"></span>
+                            ${this.point.y}<span class="unit"> 건</span>
+                        </span>
+                    </p>`;
+                }
+            },
+            legend: {
+                shadow: false,
+                y: 12,
+                itemStyle: {
+                    fontFamily: 'Pretendard', // 범례의 폰트 패밀리 설정
+                    fontSize: '13px',
+                    fontWeight: '300',
+                    color: '#727272',
+                }
+            },
+            plotOptions: {
+                series: {
+                    // allowPointSelect: true,
+                    cursor: 'pointer',
+                    borderWidth: 0,
+                    borderRadius: 0,
+                    dataLabels: [{
+                        enabled: true,
+                        distance: 6,
+                        allowOverlap: true, // 라벨 겹쳐도 표시
+                        connectorWidth: 0, // 라벨 선 두께 0
+                        placement: 'outside',
+                        // format: '{point.percentage:.0f}<span style=\"font-size: 12px; color: #727272\">%<span>',
+                        style: {
+                            color: '#727272',
+                            fontSize: '14px',
+                            fontWeight: '600',
+                            fontFamily: 'Montserrat',
+                            textOutline: 'none'
+                        },
+                        padding: 2,
+                        // 각 데이터 포인트 색상으로 라벨 색상 적용
+                        color: null, // 기본값은 null이므로, 데이터의 색상 반영
+                        formatter: function() {
+                            // 라벨을 데이터 색상으로 설정
+                            let color, fontSize, fontWeight;
+                            if(this.colorIndex <= 2){
+                                color = this.point.color;
+                                fontWeight = '700';
+                                fontSize = this.colorIndex === 0 ? '24px' : this.colorIndex === 1 ? '22px' : '18px';
+                            }else{
+                                color = '#4D4D4D';
+                            }
+                            return `<span style="color: ${color}; font-size: ${fontSize}; font-weight: ${fontWeight};" class="mont">${this.point.percentage.toFixed(0)}<span style="font-size: 12px; color: #727272;">%</span></span>`;
+                        }
+                    }],
+                    showInLegend: true,
+                }
+            },
+            series: [{
+                name: '더미',
+                colorByPoint: true,
+                size: '80%',
+                innerSize: '57%',
+                data: [{
+                    name: '더미 ',
+                    y: 53,
+                    dataLabels: {
+                        distance: 3
+                    }
+                }, {
+                    name: '더미',
+                    y: 12,
+                    dataLabels: {
+                        distance: 3
+                    }
+                }, {
+                    name: '더미 ',
+                    y: 7
+                }, { 
+                    name: '더미',
+                    y: 7
+                }, {
+                    name: '더미',
+                    y: 7
+                }, {
+                    name: '더미',
+                    y: 7
+                }]
+            }]
+        });
+    </script>
+    <!-- 두번째 원형 차트 -->
+    <script type="text/javascript">
+        Highcharts.setOptions({
+            colors: ['#593EBA','#8581E1','#B3B0FD','#E1E0FE','#010031','#292889'],
+        });
+        Highcharts.chart('dep-chart', {
+            credits: {
+                enabled: false // 크레딧(로고) 표시 비활성화
+            },
+            exporting: {
+                enabled: false // 이미지 다운로드 버튼 비활성화
+            },
+            chart: {
+                type: 'pie',
+                custom: {},
+                height: 233,
+                width: 480,
+            },
+            accessibility: {
+                point: {
+                    valueSuffix: '%'
+                }
+            },
+            title: {
+                text: null
+            },
+            tooltip: {
+                // headerFormat: "<span style=\"font-size: 12px; padding: 0 5px;\">{point.key}</span><br/>",
+                // pointFormat: '<b style=\"font-size: 16px;\">{point.percentage:.0f}<span style=\"font-size: 10px;\">%<span></b>',                
+                backgroundColor: '#1E1E1E',
+                style: {
+                    color: '#FFFFFF',         
+                    fontFamily: 'Pretendard', 
+                    textAlign: 'right'
+                },
+                shadow: true,                
+                borderRadius: 5,            
+                borderWidth: 1,              
+                borderColor: '#000000',
+                useHTML: true,               // HTML 사용하여 개행 적용
+                formatter: function () {
+                    // 개행 추가를 위해 HTML 태그 사용
+                    return `<p class="tooltip_custom">
+                        <span>${this.point.name}</span>
+                        <span class="mont">
+                            <span class="mark" style="border-color:${this.point.color}"></span>
+                            ${this.point.y}<span class="unit"> 건</span>
+                        </span>
+                    </p>`;
+                }
+            },
+            legend: {
+                shadow: false,
+                y: 12,
+                itemStyle: {
+                    fontFamily: 'Pretendard', // 범례의 폰트 패밀리 설정
+                    fontSize: '13px',
+                    fontWeight: '300',
+                    color: '#727272',
+                }
+            },
+            plotOptions: {
+                series: {
+                    // allowPointSelect: true,
+                    cursor: 'pointer',
+                    borderWidth: 0,
+                    borderRadius: 0,
+                    dataLabels: [{
+                        enabled: true,
+                        distance: 6,
+                        allowOverlap: true, // 라벨 겹쳐도 표시
+                        connectorWidth: 0, // 라벨 선 두께 0
+                        placement: 'outside',
+                        // format: '{point.percentage:.0f}<span style=\"font-size: 12px; color: #727272\">%<span>',
+                        style: {
+                            color: '#727272',
+                            fontSize: '14px',
+                            fontWeight: '600',
+                            fontFamily: 'Montserrat',
+                            textOutline: 'none'
+                        },
+                        padding: 2,
+                        // 각 데이터 포인트 색상으로 라벨 색상 적용
+                        color: null, // 기본값은 null이므로, 데이터의 색상 반영
+                        formatter: function() {
+                            // 라벨을 데이터 색상으로 설정
+                            let color, fontSize, fontWeight;
+                            if(this.colorIndex <= 2){
+                                color = this.point.color;
+                                fontWeight = '700';
+                                fontSize = this.colorIndex === 0 ? '24px' : this.colorIndex === 1 ? '22px' : '18px';
+                            }else{
+                                color = '#4D4D4D';
+                            }
+                            return `<span style="color: ${color}; font-size: ${fontSize}; font-weight: ${fontWeight};" class="mont">${this.point.percentage.toFixed(0)}<span style="font-size: 12px; color: #727272;">%</span></span>`;
+                        }
+                    }],
+                    showInLegend: true,
+                }
+            },
+            series: [{
+                name: '더미',
+                colorByPoint: true,
+                size: '80%',
+                innerSize: '57%',
+                data: [{
+                    name: '더미',
+                    y: 60
+                }, {
+                    name: '더미',
+                    y: 12
+                }, {
+                    name: '더미',
+                    y: 7
+                }, { 
+                    name: '더미',
+                    y: 7
+                }, {
+                    name: '더미',
+                    y: 7
+                }, {
+                    name: '더미',
+                    y: 7
+                }]
+            }]
+        });
+    </script>
+    <!-- 막대 -->
+    <script type="text/javascript">
+        Highcharts.setOptions({
+            colors: ['#2770C9', '#BEE1ED'],
+        }); 
+        Highcharts.chart('db-cnt-chart', {
+            credits: {
+                enabled: false // 크레딧(로고) 표시 비활성화
+            },
+            exporting: {
+                enabled: false // 이미지 다운로드 버튼 비활성화
+            },
+            title: {
+                text: null,
+            },
+            chart: {
+                type: 'column',
+                height: 236,
+                marginTop: 50,
+                width: 480,
+            },
+            xAxis: {
+                categories: ['카테고리1', '카테고리2', '카테고리3', '카테고리4', '카테고리5', '카테고리6'],
+                title: {
+                    text: null
+                },
+                lineColor: '#e6e6e6',
+                labels: {
+                    y: 20,
+                    autoRotation: [0, 0],
+                    style: {
+                        fontSize: '13px',
+                        fontFamily: 'Pretendard',
+                        color: '#727272',
+                        fontWeight: '300',
+                    }
+                }
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: null
+                },
+                labels: {
+                    style: {
+                        fontSize: '12px',
+                        fontFamily: 'Pretendard',
+                        color: '#727272',
+                        fontWeight: '300',
+                    }
+                }
+            },
+            tooltip: {
+                backgroundColor: '#1E1E1E',
+                style: {
+                    color: '#FFFFFF',
+                    fontSize: '13px', 
+                    fontFamily: 'Pretendard',
+                },
+                shadow: true,
+                borderRadius: 5,
+                borderWidth: 1,         
+                borderColor: '#000000',      
+                useHTML: true,
+                formatter: function () {
+                    // 개행 추가를 위해 HTML 태그 사용
+                    return `<p class="tooltip_custom">
+                        <span>${this.series.name}</span>
+                        <span class="mont">${this.point.y}<span class="unit"> 개</span></span>
+                    </p>`;
+                },
+            },
+            legend: {
+                shadow: false,
+                y: 12,
+                itemStyle: {
+                    fontFamily: 'Pretendard', // 범례의 폰트 패밀리 설정
+                    fontSize: '13px',
+                    fontWeight: '300',
+                    color: '#727272',
+                }
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.22,
+                    borderWidth: 1,
+                    borderRadius: 0,
+                    groupPadding: 0.33
+                },
+            },
+            series: [
+                {
+                    name: '데이터 1',
+                    data: [35, 25, 15, 18, 18, 45],
+                    borderColor: '#3072C1'
+                }, 
+                {
+                    name: '데이터 2',
+                    data: [7, 10, 15, 35, 25, 45],
+                    borderColor: '#A9D0DE'
+                },
+            ]
+        });
+    </script>
+    <!-- 라인 -->
+    <script type="text/javascript">
+        Highcharts.chart('db-progress-chart', {
+            credits: {
+                enabled: false // 크레딧(로고) 표시 비활성화
+            },
+            exporting: {
+                enabled: false // 이미지 다운로드 버튼 비활성화
+            },
+            title: {
+                text: null,
+            },
+            chart: {
+                type: 'spline',
+                height: 236,
+                width: 590,
+                marginTop: 30
+            },
+            yAxis: {
+                title: {
+                    text: null
+                },
+                labels: {
+                    style: {
+                        fontSize: '12px',
+                        fontFamily: 'Pretendard',
+                        color: '#727272',
+                        fontWeight: '300',
+                    }
+                }
+            },
+            xAxis: {
+                categories: ['Jan24', 'Feb24', 'Mar24', 'Apr24', 'May24', 'Jun24', 'Jul24', 'Aug24', 'Sep24', 'Oct24', 'Nov24', 'Dec24'],
+                lineColor: '#e6e6e6',
+                autoRotation: [0, 0],
+                labels: {
+                    style: {
+                        fontSize: '13px',
+                        fontFamily: 'Pretendard',
+                        color: '#727272',
+                        fontWeight: '300',
+                    }
+                }
+            },
+            legend: {
+                shadow: false,
+                y: 12,
+                itemStyle: {
+                    fontFamily: 'Pretendard', // 범례의 폰트 패밀리 설정
+                    fontSize: '13px',
+                    fontWeight: '300',
+                    color: '#727272',
+                }
+            },
+            tooltip: {
+                backgroundColor: '#1E1E1E',
+                style: {
+                    color: '#FFFFFF',
+                    fontSize: '13px', 
+                    fontFamily: 'Pretendard',
+                },
+                shadow: true,
+                borderRadius: 5,
+                borderWidth: 1,         
+                borderColor: '#000000',
+            },
+            plotOptions: {
+                series: {
+                    label: {
+                        connectorAllowed: false
+                    },
+                    lineWidth: 1.5
+                }
+            },
+            series: [
+                {
+                    name: '더미',
+                    color: '#3F80E5',
+                    data: [
+                        10, 25, 18, 15, 27, 35,
+                        23, 45, 34, 50, 21, 31
+                    ],
+                    marker: {
+                        symbol: 'circle', // 마커 모양 변경
+                        fillColor: '#3F80E566', // 마커 내부 색상
+                        lineColor: '#3F80E5', // 마커 테두리 색상
+                        lineWidth: 1,
+                        radius: 3          // 마커 크기 설정
+                    },
+                }, 
+                {
+                    name: '더미',
+                    color: '#94BDE6',
+                    data: [
+                        20, 34, 45, 21, 13, 18,
+                        46, 29, 38, 27, 16, 38
+                    ],
+                    marker: {
+                        symbol: 'circle', // 마커 모양 변경
+                        fillColor: '#BA39EA66', // 마커 내부 색상
+                        lineColor: '#BA39EA', // 마커 테두리 색상
+                        lineWidth: 1,
+                        radius: 3          // 마커 크기 설정
+                    },
+                }, 
+                {
+                    name: '더미',
+                    color: '#4AB2E1',
+                    data: [
+                        20, 28, 39, 56, 49, 24,
+                        37, 28, 16, 19, 24, 37
+                    ],
+                    marker: {
+                        symbol: 'circle', // 마커 모양 변경
+                        fillColor: '#A7E5F3', // 마커 내부 색상
+                        lineColor: '#33CEEF', // 마커 테두리 색상
+                        lineWidth: 1,
+                        radius: 3          // 마커 크기 설정
+                    },
+                }, 
+                {
+                    name: '더미',
+                    data: [
+                        16, 18, 46, 37, 16, 29, 37,
+                        40, 43, 18, 48, 10
+                    ],
+                    marker: {
+                        symbol: 'circle', // 마커 모양 변경
+                        fillColor: '#A9B0F1', // 마커 내부 색상
+                        lineColor: '#3748EA', // 마커 테두리 색상
+                        lineWidth: 1,
+                        radius: 3          // 마커 크기 설정
+                    },
+                }, 
+                {
+                    name: '더미',
+                    data: [
+                        28, 50, 15, 18, 39, 46, 26,
+                        40, 13, 49, 54, 17
+                    ],
+                    marker: {
+                        symbol: 'circle', // 마커 모양 변경
+                        fillColor: '#8BD04766', // 마커 내부 색상
+                        lineColor: '#8BD047', // 마커 테두리 색상
+                        lineWidth: 1,
+                        radius: 3          // 마커 크기 설정
+                    },
+                },
+                {
+                    name: '더미',
+                    data: [
+                        20, 50, 20, 10, 29, 16, 64,
+                        9, 11, 44, 18, 15
+                    ],
+                    marker: {
+                        symbol: 'circle', // 마커 모양 변경
+                        fillColor: '#9393A7', // 마커 내부 색상
+                        lineColor: '#010031', // 마커 테두리 색상
+                        lineWidth: 1,
+                        radius: 3          // 마커 크기 설정
+                    },
+                }
+            ],
+        });
+    </script>
+ </body>
+</html>
+<!-- 하단 공통 끝 -->
+
+
+
+
+<!-- 스크롤 시 헤더 또는 사이드 메뉴 고정 여부 -->
+<!-- 어디까지를 공통으로 뺄 건지 협의 -->
+<!-- 헤더 햄버거 버튼 클릭 시 메뉴 나옴? -->
+<!-- 사용자단/관리자단/관리자단-내 업무 -->

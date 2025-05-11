@@ -1,0 +1,523 @@
+<!-- 상단 공통 시작 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>목록</title>
+    <link rel="stylesheet" href="../../css/font.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../../css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../css/grid_sample.css">
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+<body>
+    <header>
+        <div class="con">
+            <div class="gnb_wrap">
+                <div class="h_left">
+                    <button class="all_menu open_popup" data-popup="site_map_popup"><span class="sr_only">전체메뉴보기</span></button>
+                    <h1>LOGO</h1>
+                </div>
+                <nav>
+                    <ul class="gnb">
+                        <!-- class="on" 추가 시 페이지 활성화 표시 -->
+                        <li class="on">
+                            <a href="javascript:void(0)"><span>MENU 1</span></a>
+                             <div class="lnb_wrap">
+                                <ul class="lnb">
+                                    <li><a href="javascript:void(0)">MENU</a></li>
+                                    <li><a href="javascript:void(0)">MENU</a></li>
+                                    <li><a href="javascript:void(0)">MENU</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><span>MENU 2</span></a>
+                            <div class="lnb_wrap">
+                                <ul class="lnb">
+                                    <li><a href="javascript:void(0)">MENU</a></li>
+                                    <li><a href="javascript:void(0)">MENU</a></li>
+                                </ul>
+                            </div>
+                        </li> 
+                        <li>
+                            <a href="javascript:void(0)"><span>MENU 3</span></a>
+                            <div class="lnb_wrap">
+                                <ul class="lnb">
+                                    <li><a href="javascript:void(0)">MENU</a></li>
+                                    <li><a href="javascript:void(0)">MENU</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><span>MENU 4</span></a>
+                            <div class="lnb_wrap">  
+                                <ul class="lnb">
+                                    <li><a href="javascript:void(0)">MENU</a></li>
+                                    <li><a href="javascript:void(0)">MENU</a></li>
+                                    <li><a href="javascript:void(0)">MENU</a></li>
+                                    <li><a href="javascript:void(0)">MENU</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><span>MENU 5</span></a>
+                            <div class="lnb_wrap">
+                                <ul class="lnb">
+                                    <li><a href="javascript:void(0)">MENU</a></li>
+                                    <li><a href="javascript:void(0)">MENU</a></li>
+                                    <li><a href="javascript:void(0)">MENU</a></li>
+                                    <li><a href="javascript:void(0)">MENU</a></li>
+                                    <li><a href="javascript:void(0)">MENU</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="h_right">
+                    <div class="header_search">
+                        <button class="open_popup" data-popup="heaader_search_popup"><span class="sr_only">검색</span></button>
+                    </div>
+                    <div class="header_alarm">
+                        <span class="cnt">27</span>
+                        <button class="txt">알림</button>
+                    </div>
+                    <div class="header_login">
+                        <span class="txt">최희원님</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="layer_bk"></div>
+    <!-- 전체메뉴 팝업 -->
+    <div class="layer_popup" id="site_map_popup">
+        <div class="popup_box">
+            <div class="pop_title">
+                <p class="site_map_title">전체메뉴</p>
+            </div>
+            <div class="pop_con" tabindex="0">
+                <div class="site_map">
+                    <div class="menu_item">
+                        <a href="javascript:void(0)">menu</a>
+                        <ul class="sub_menu_item">
+                            <li><a href="javascript:void(0)">menu</a></li>
+                            <li><a href="javascript:void(0)">menu</a></li>
+                            <li><a href="javascript:void(0)">menu</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_item">
+                        <a href="javascript:void(0)">menu</a>
+                        <ul class="sub_menu_item">
+                            <li><a href="javascript:void(0)">menu</a></li>
+                            <li><a href="javascript:void(0)">menu</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_item">
+                        <a href="javascript:void(0)">menu</a>
+                        <ul class="sub_menu_item">
+                            <li><a href="javascript:void(0)">menu</a></li>
+                            <li><a href="javascript:void(0)">menu</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_item">
+                        <a href="javascript:void(0)">menu</a>
+                        <ul class="sub_menu_item">
+                            <li><a href="javascript:void(0)">menu</a></li>
+                            <li><a href="javascript:void(0)">menu</a></li>
+                            <li><a href="javascript:void(0)">menu</a></li>
+                            <li><a href="javascript:void(0)">menu</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu_item mypage">
+                        <a href="javascript:void(0)">menu</a>
+                        <div class="link_area">
+                            <a href="javascript:void(0)" class="task">menu</a>
+                            <a href="javascript:void(0)">menu</a>
+                            <a href="javascript:void(0)">menu</a>
+                            <a href="javascript:void(0)">menu</a>
+                            <a href="javascript:void(0)">menu</a>
+                        </div>
+                        <div class="sub_menu_area">
+                            <div class="item">
+                                <a href="javascript:void(0)" class="third_level">menu</a>
+                                <ul class="sub_menu_item">
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                </ul>
+                            </div>
+                            <div class="item">
+                                <a href="javascript:void(0)" class="third_level">menu</a>
+                                <ul class="sub_menu_item">
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                </ul>
+                            </div>
+                            <div class="item">
+                                <a href="javascript:void(0)" class="third_level">menu</a>
+                                <ul class="sub_menu_item">
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                </ul>
+                            </div>
+                            <div class="item">
+                                <a href="javascript:void(0)" class="third_level">menu</a>
+                                <ul class="sub_menu_item">
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                    <li><a href="javascript:void(0)">menu</a></li>
+                                </ul> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn pop_close">
+                <span class="sr_only">팝업닫기버튼</span>
+            </button>
+        </div>
+    </div>
+    <!-- 헤더 검색창 팝업 --> 
+    <div class="layer_popup" id="heaader_search_popup">
+        <div class="popup_box">
+            <button class="btn pop_close">
+                <span class="sr_only">팝업닫기버튼</span>
+            </button>
+            <div class="pop_con">
+                <div class="search_pop_con">
+                    <div class="search_pop_int">
+                        <input type="text" placeholder="검색어를 입력해 주세요.">
+                        <button class="pop_search_btn">
+                            <span class="sr_only">검색버튼</span>
+                        </button>
+                    </div>
+                    <div class="search_pop_option">
+                        <p>검색옵션</p>
+                        <div class="radio_btn">
+                            <label class="radio_s">
+                                <input type="radio" name="radio">
+                                <span class="radio_mark" aria-hidden="true"></span>
+                                <span class="radio_txt">or검색</span>
+                            </label>
+                            <label class="radio_s">
+                                <input type="radio" name="radio">
+                                <span class="radio_mark" aria-hidden="true"></span>
+                                <span class="radio_txt">and검색</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pop_btn">
+                <button class="secondary pop_close">닫기</button>
+            </div>
+        </div>
+    </div>
+    <!-- 알람 레이어 팝업 -->
+    <div class="alarm_layer_popup">
+        <div class="popup_box">
+            <div class="title">알림</div>
+            <div class="tab">
+                <!-- class="active" 추가 시 활성화 -->
+                <button class="active">샘플<span>999</span></button>
+                <button>샘플<span>999</span></button>
+                <button>샘플<span>999</span></button> 
+            </div>
+            <div class="list">
+                <div class="item">
+                    <div class="ctg">
+                        <!-- class="blue"결재요청 | class="black" 결재완료 -->
+                        <span class="blue">더미데이터</span>
+                        <span>더미데이터</span>
+                    </div>
+                    <div class="con_title">알림데이터 설명입니다.</div>
+                    <div class="etc"> 
+                        <p>2024-08-18 12:12:12</p>
+                        <div class="btn">
+                            <a href="javascript:void(0)">읽음</a>
+                            <a href="javascript:void(0)" class="link">이동</a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ctg">
+                        <!-- class="blue"결재요청 | class="black" 결재완료 -->
+                        <span class="blue">더미데이터</span>
+                        <span>더미데이터</span>
+                    </div>
+                    <div class="con_title">알림데이터 설명입니다.</div>
+                    <div class="etc"> 
+                        <p>2024-08-18 12:12:12</p>
+                        <div class="btn">
+                            <a href="javascript:void(0)">읽음</a>
+                            <a href="javascript:void(0)" class="link">이동</a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ctg">
+                        <!-- class="blue"결재요청 | class="black" 결재완료 -->
+                        <span class="blue">더미데이터</span>
+                        <span>더미데이터</span>
+                    </div>
+                    <div class="con_title">알림데이터 설명입니다.</div>
+                    <div class="etc"> 
+                        <p>2024-08-18 12:12:12</p>
+                        <div class="btn">
+                            <a href="javascript:void(0)">읽음</a>
+                            <a href="javascript:void(0)" class="link">이동</a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ctg">
+                        <!-- class="blue"결재요청 | class="black" 결재완료 -->
+                        <span class="blue">더미데이터</span>
+                        <span>더미데이터</span>
+                    </div>
+                    <div class="con_title">알림데이터 설명입니다.</div>
+                    <div class="etc"> 
+                        <p>2024-08-18 12:12:12</p>
+                        <div class="btn">
+                            <a href="javascript:void(0)">읽음</a>
+                            <a href="javascript:void(0)" class="link">이동</a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ctg">
+                        <!-- class="blue"결재요청 | class="black" 결재완료 -->
+                        <span class="blue">더미데이터</span>
+                        <span>더미데이터</span>
+                    </div>
+                    <div class="con_title">알림데이터 설명입니다.</div>
+                    <div class="etc"> 
+                        <p>2024-08-18 12:12:12</p>
+                        <div class="btn">
+                            <a href="javascript:void(0)">읽음</a>
+                            <a href="javascript:void(0)" class="link">이동</a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ctg">
+                        <!-- class="blue"결재요청 | class="black" 결재완료 -->
+                        <span class="blue">더미데이터</span>
+                        <span>더미데이터</span>
+                    </div>
+                    <div class="con_title">알림데이터 설명입니다.</div>
+                    <div class="etc"> 
+                        <p>2024-08-18 12:12:12</p>
+                        <div class="btn">
+                            <a href="javascript:void(0)">읽음</a>
+                            <a href="javascript:void(0)" class="link">이동</a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ctg">
+                        <!-- class="blue"결재요청 | class="black" 결재완료 -->
+                        <span class="blue">더미데이터</span>
+                        <span>더미데이터</span>
+                    </div>
+                    <div class="con_title">알림데이터 설명입니다.</div>
+                    <div class="etc"> 
+                        <p>2024-08-18 12:12:12</p>
+                        <div class="btn">
+                            <a href="javascript:void(0)">읽음</a>
+                            <a href="javascript:void(0)" class="link">이동</a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ctg">
+                        <!-- class="blue"결재요청 | class="black" 결재완료 -->
+                        <span class="blue">더미데이터</span>
+                        <span>더미데이터</span>
+                    </div>
+                    <div class="con_title">알림데이터 설명입니다.</div>
+                    <div class="etc"> 
+                        <p>2024-08-18 12:12:12</p>
+                        <div class="btn">
+                            <a href="javascript:void(0)">읽음</a>
+                            <a href="javascript:void(0)" class="link">이동</a>
+                        </div> 
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="ctg">
+                        <!-- class="blue"결재요청 | class="black" 결재완료 -->
+                        <span class="blue">더미데이터</span>
+                        <span>더미데이터</span>
+                    </div>
+                    <div class="con_title">알림데이터 설명입니다.</div>
+                    <div class="etc"> 
+                        <p>2024-08-18 12:12:12</p>
+                        <div class="btn">
+                            <a href="javascript:void(0)">읽음</a>
+                            <a href="javascript:void(0)" class="link">이동</a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <button class="alarm_close"><span class="sr_only">알림팝업닫기</span></button>
+        </div>
+    </div>
+    <div class="wrap">
+        <!-- 왼쪽 리스트 -->
+        <aside>
+            <div class="aside_con">
+                <!-- 메뉴 -->
+                <div class="menu">
+                    <span class="all_menu_txt">ALL MENU</span>
+                    <button class="aside_hide_btn">
+                        <span class="sr_only">메뉴 토글 버튼</span>
+                    </button>
+                    <nav>
+                        <ul class="gnb"> 
+                            <!-- class="on" 추가 시 페이지 활성화 표시 -->
+                            <li class="on" id="serviceIntroduction">
+                                <a href="javascript:void(0)"><span>MENU 1</span></a>
+                                 <div class="lnb_wrap">
+                                    <ul class="lnb">
+                                        <li><a href="javascript:void(0)">MENU</a></li>
+                                        <li><a href="javascript:void(0)">MENU</a></li>
+                                        <li><a href="javascript:void(0)">MENU</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li id="dataStatus">
+                                <a href="javascript:void(0)"><span>MENU 2</span></a>
+                                <div class="lnb_wrap">
+                                    <ul class="lnb">
+                                        <li><a href="javascript:void(0)">MENU</a></li>
+                                        <li><a href="javascript:void(0)">MENU</a></li>
+                                    </ul>
+                                </div>
+                            </li> 
+                            <li id="dataVisualization">
+                                <a href="javascript:void(0)"><span>MENU 3</span></a>
+                                <div class="lnb_wrap">
+                                    <ul class="lnb">
+                                        <li><a href="javascript:void(0)">MENU</a></li>
+                                        <li><a href="javascript:void(0)">MENU</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li id="portalCommunity">
+                                <a href="javascript:void(0)"><span>MENU 4</span></a>
+                                <div class="lnb_wrap">  
+                                    <ul class="lnb">
+                                        <li><a href="javascript:void(0)">MENU</a></li>
+                                        <li><a href="javascript:void(0)">MENU</a></li>
+                                        <li><a href="javascript:void(0)">MENU</a></li>
+                                        <li><a href="javascript:void(0)">MENU</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li id="myPage">
+                                <a href="javascript:void(0)"><span>MENU 5</span></a>
+                                <div class="lnb_wrap">
+                                    <ul class="lnb">
+                                        <li><a href="javascript:void(0)">MENU</a></li>
+                                        <li><a href="javascript:void(0)">MENU</a></li>
+                                        <li><a href="javascript:void(0)">MENU</a></li>
+                                        <li><a href="javascript:void(0)">MENU</a></li>
+                                        <li><a href="javascript:void(0)">MENU</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- 상세검색 -->
+            </div>
+        </aside>
+        <!-- 현재 페이지 경로 -->
+        <div class="location_wrap">
+            <a href="javascript:void"><span class="sr_only">home</span></a>
+            <a href="javascript:void">location</a>
+            <a href="javascript:void">location</a>
+        </div> 
+        <div class="contents">
+            <!-- 상단 공통 끝 -->
+            <div class="sub">
+                <div class="sub_title_wrap">
+                    <h2>TITLE</h2>
+                    <h3>SUB TITLE</h3>
+                </div>
+                <div class="sub_btn_wrap">
+                    <div class="total_cnt">전체<span>(1,005건)</span></div>
+                    <div class="filter_search">
+                        <div class="select_custom">
+                            <select id="select">
+                                <option value="">전체</option>
+                                <option value="">전체</option>
+                                <option value="">전체</option>
+                                <option value="">전체</option>
+                            </select>
+                        </div>
+                        <input type="text" placeholder="검색어 입력">
+                        <a href="javascript:void(0)" class="btn">검색</a>
+                    </div>
+                </div>
+                <div class="grid_wrap notice">
+                    <div id="myGrid_01" style="height: 470px;" class="ag-theme-quartz lg_theme"></div>
+                    <div class="page">
+                        <!-- class="on" 추가 시 페이지 활성화 -->
+                        <a href="javascript:void(0)" class="first"></a>
+                        <a href="javascript:void(0)" class="prev"></a>
+                        <a href="javascript:void(0)" class="on">1</a>
+                        <a href="javascript:void(0)" class="">2</a>
+                        <a href="javascript:void(0)" class="">3</a>
+                        <a href="javascript:void(0)" class="">50</a>
+                        <a href="javascript:void(0)" class="next"></a>
+                        <a href="javascript:void(0)" class="last"></a>
+                        <select name="" id="">
+                            <option value="">10 / page</option>
+                            <option value="">20 / page</option>
+                            <option value="">30 / page</option>
+                        </select>
+                    </div>
+                    <div class="action_btn_wrap">
+                        <div class="right">
+                            <a href="javascript:void(0)" class="write">글쓰기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 하단 공통 시작 -->
+        </div>
+    </div>
+    <!-- 그리드 js -->
+    <script src="../../js/agGrid/ag-grid-community.js"></script>
+    <script src="../../js/agGrid/ag-grid-community.noStyle.js"></script>
+    <script src="../../js/board/list.js"></script>
+    <script>
+        $(".select_custom select").each(function() {
+            $(this).selectmenu({
+                appendTo: $(this).closest(".select_custom")
+            });
+        });
+    </script>
+ </body>
+</html>
+<!-- 하단 공통 끝 -->
